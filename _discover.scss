@@ -1,0 +1,820 @@
+@media screen and (min-width:300px) {
+    div.discover{
+        background-color: $color-secondary;
+        width: 100%;
+        overflow: hidden;
+        h2{
+            color: white;
+            font-size: 26px;
+            letter-spacing: 7px;
+        }
+        div.discover-links{
+            >a{
+                text-decoration: none;
+                color: white;
+                padding: 15px 20px;
+                font-size: 18px;
+                letter-spacing: 4px;
+                transition: .5s ease;
+                cursor: pointer;
+            }
+            >a:hover{
+                color: $color-primary;
+            }
+            >a.active{
+                color: $color-primary;
+            }
+        }
+        div.discover-menu, div.discover-burger, div.discover-dessert, div.discover-drink, div.discover-pasta, div.discover-salad{
+            overflow: hidden;
+            width: 100%;
+            div.discover-card{
+                width: 100%;
+                padding: 10px;
+                color: white;
+                transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                div.img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    position: relative;
+                    z-index: 9;
+                    overflow: hidden;
+                    img.img-pizza{
+                       width: 100%;
+                    }
+                    div.img-shop{
+                        width: 200px;
+                        height: 200px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        position: absolute;
+                        top: 0;
+                        left: -100%;
+                        border-radius: 50%;
+                        background-color: rgba($color: $color-primary, $alpha: 50%);
+                        transition: .5s ease;
+                        cursor: pointer;
+                        a{
+                            text-decoration: none;
+                            width: 100%;
+                            img{
+                                width: 25%;
+                                opacity: 100%; 
+                            }
+                        }
+                    }
+                }
+                
+                h3{
+                    padding: 20px 15px;
+                    font-size: 20px;
+                    letter-spacing: 4px;
+                    margin-top: 10px;
+                }
+                p{
+                    padding: 0;
+                    width: 100%;
+                    font-size: 16px;
+                }
+                span{
+                    padding: 15px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-family: 'lato' ;
+                    letter-spacing: 3px;
+                }
+            }
+            div.discover-card:hover div.img div.img-shop{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            div.discover-card:hover{
+                transform: scale(1.1);
+            }
+            div.no-1, div.no-2, div.no-5, div.no-6{
+                position: relative;
+                left: 0;
+            }
+            div.no-3, div.no-4, div.no-7, div.no-8{
+                position: relative;
+                right: 0;
+            }
+        }
+    }
+}
+@media screen and (min-width:567px) {
+    div.discover{
+        background-color: $color-secondary;
+        width: 100%;
+        overflow: hidden;
+        h2{
+            color: white;
+            font-size: 26px;
+            letter-spacing: 7px;
+        }
+        div.discover-links{
+            >a{
+                text-decoration: none;
+                color: white;
+                padding: 15px 20px;
+                font-size: 18px;
+                letter-spacing: 4px;
+                transition: .5s ease;
+                cursor: pointer;
+            }
+            >a:hover{
+                color: $color-primary;
+            }
+            >a.active{
+                color: $color-primary;
+            }
+        }
+        div.discover-menu, div.discover-burger, div.discover-dessert, div.discover-drink, div.discover-pasta, div.discover-salad{
+            overflow: hidden;
+            width: 100%;
+            div.discover-card{
+                width: 50%;
+                padding: 20px;
+                color: white;
+                transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                div.img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    position: relative;
+                    z-index: 9;
+                    overflow: hidden;
+                    img.img-pizza{
+                       width: 100%;
+                    }
+                    div.img-shop{
+                        width: 200px;
+                        height: 200px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        position: absolute;
+                        top: 0;
+                        left: -100%;
+                        border-radius: 50%;
+                        background-color: rgba($color: $color-primary, $alpha: 50%);
+                        transition: .5s ease;
+                        cursor: pointer;
+                        a{
+                            text-decoration: none;
+                            width: 100%;
+                            img{
+                                width: 25%;
+                                opacity: 100%; 
+                            }
+                        }
+                    }
+                }
+                
+                h3{
+                    padding: 20px 15px;
+                    font-size: 20px;
+                    letter-spacing: 4px;
+                    margin-top: 10px;
+                }
+                p{
+                    padding: 5px;
+                    width: 100%;
+                    font-size: 16px;
+                }
+                span{
+                    padding: 15px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-family: 'lato' ;
+                    letter-spacing: 3px;
+                }
+            }
+            div.discover-card:hover div.img div.img-shop{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            div.discover-card:hover{
+                transform: scale(1.1);
+            }
+            div.no-1, div.no-2, div.no-5, div.no-6{
+                position: relative;
+                left: 0;
+            }
+            div.no-3, div.no-4, div.no-7, div.no-8{
+                position: relative;
+                right: 0;
+            }
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    div.discover{
+        background-color: $color-secondary;
+        width: 100%;
+        overflow: hidden;
+        h2{
+            color: white;
+            font-size: 26px;
+            letter-spacing: 7px;
+        }
+        div.discover-links{
+            >a{
+                text-decoration: none;
+                color: white;
+                padding: 15px 20px;
+                font-size: 18px;
+                letter-spacing: 4px;
+                transition: .5s ease;
+                cursor: pointer;
+            }
+            >a:hover{
+                color: $color-primary;
+            }
+            >a.active{
+                color: $color-primary;
+            }
+        }
+        div.discover-menu, div.discover-burger, div.discover-dessert, div.discover-drink, div.discover-pasta, div.discover-salad{
+            overflow: hidden;
+            width: 100%;
+            div.discover-card{
+                width: 50%;
+                padding: 20px;
+                color: white;
+                transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                div.img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    position: relative;
+                    z-index: 9;
+                    overflow: hidden;
+                    img.img-pizza{
+                       width: 100%;
+                    }
+                    div.img-shop{
+                        width: 200px;
+                        height: 200px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        position: absolute;
+                        top: 0;
+                        left: -100%;
+                        border-radius: 50%;
+                        background-color: rgba($color: $color-primary, $alpha: 50%);
+                        transition: .5s ease;
+                        cursor: pointer;
+                        a{
+                            text-decoration: none;
+                            width: 100%;
+                            img{
+                                width: 25%;
+                                opacity: 100%; 
+                            }
+                        }
+                    }
+                }
+                
+                h3{
+                    padding: 20px 15px;
+                    font-size: 20px;
+                    letter-spacing: 4px;
+                    margin-top: 10px;
+                }
+                p{
+                    padding: 15px;
+                    width: 100%;
+                    font-size: 16px;
+                }
+                span{
+                    padding: 15px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-family: 'lato' ;
+                    letter-spacing: 3px;
+                }
+            }
+            div.discover-card:hover div.img div.img-shop{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            div.discover-card:hover{
+                transform: scale(1.1);
+            }
+            div.no-1, div.no-2, div.no-5, div.no-6{
+                position: relative;
+                left: 0;
+            }
+            div.no-3, div.no-4, div.no-7, div.no-8{
+                position: relative;
+                right: 0;
+            }
+        }
+    }
+}
+@media screen and (min-width:999px) {
+    div.discover{
+        background-color: $color-secondary;
+        width: 100%;
+        overflow: hidden;
+        h2{
+            color: white;
+            font-size: 26px;
+            letter-spacing: 7px;
+        }
+        div.discover-links{
+            >a{
+                text-decoration: none;
+                color: white;
+                padding: 15px 20px;
+                font-size: 18px;
+                letter-spacing: 4px;
+                transition: .5s ease;
+                cursor: pointer;
+            }
+            >a:hover{
+                color: $color-primary;
+            }
+            >a.active{
+                color: $color-primary;
+            }
+        }
+        div.discover-menu, div.discover-burger, div.discover-dessert, div.discover-drink, div.discover-pasta, div.discover-salad{
+            overflow: hidden;
+            width: 100%;
+            div.discover-card{
+                width: 25%;
+                padding: 20px;
+                color: white;
+                transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                div.img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    position: relative;
+                    z-index: 9;
+                    overflow: hidden;
+                    img.img-pizza{
+                       width: 100%;
+                    }
+                    div.img-shop{
+                        width: 200px;
+                        height: 200px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        position: absolute;
+                        top: 0;
+                        left: -100%;
+                        border-radius: 50%;
+                        background-color: rgba($color: $color-primary, $alpha: 50%);
+                        transition: .5s ease;
+                        cursor: pointer;
+                        a{
+                            text-decoration: none;
+                            width: 100%;
+                            img{
+                                width: 25%;
+                                opacity: 100%; 
+                            }
+                        }
+                    }
+                }
+                
+                h3{
+                    padding: 20px 15px;
+                    font-size: 20px;
+                    letter-spacing: 4px;
+                    margin-top: 10px;
+                }
+                p{
+                    padding: 5px;
+                    font-size: 16px;
+                }
+                span{
+                    padding: 15px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-family: 'lato' ;
+                    letter-spacing: 3px;
+                }
+            }
+            div.discover-card:hover div.img div.img-shop{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            div.discover-card:hover{
+                transform: scale(1.1);
+            }
+            div.no-1, div.no-2, div.no-5, div.no-6{
+                position: relative;
+                left: -150%;
+            }
+            div.no-3, div.no-4, div.no-7, div.no-8{
+                position: relative;
+                right: -150%;
+            }
+        }
+        
+        div.discover-anime{
+            div.no-1{
+                position: relative;
+                left: 0;
+                animation-name: discover-1;
+                animation-duration: 1s;
+                animation-iteration-count: 1;
+            }
+            @keyframes discover-1 {
+                from{
+                    position: relative;
+                    left: -100%;
+                }
+                to{
+                    position: relative;
+                    left: 0;
+                }
+            }
+            div.no-2{
+                position: relative;
+                left: 0;
+                animation-name: discover-2;
+                animation-duration: .5s;
+                animation-iteration-count: 1;
+            }
+            @keyframes discover-2 {
+                from{
+                    position: relative;
+                    left: -100%;
+                }
+                to{
+                    position: relative;
+                    left: 0;
+                }
+            }
+            div.no-3{
+                position: relative;
+                right: 0;
+                animation-name: discover-3;
+                animation-duration: .5s;
+                animation-iteration-count: 1s;
+            }
+            @keyframes discover-3 {
+                from{
+                    position: relative;
+                    right: -100%;
+                }
+                to{
+                    position: relative;
+                    right: 0;
+                }
+            }
+            div.no-4{
+                position: relative;
+                right: 0;
+                animation-name: discover-4;
+                animation-duration: 1s;
+                animation-iteration-count: 1;
+            }
+            @keyframes discover-4 {
+                from{
+                    position: relative;
+                    right: -100%;
+                }
+                to{
+                    position: relative;
+                    right: 0;
+                }
+            }
+        }
+        div.discover-anime-2{
+                div.no-5{
+                    position: relative;
+                    left: 0;
+                    animation-name: discover-5;
+                    animation-duration: 1s;
+                    animation-iteration-count: 1;
+                }
+                @keyframes discover-5 {
+                    from{
+                        position: relative;
+                        left: -100%;
+                    }
+                    to{
+                        position: relative;
+                        left: 0;
+                    }
+                }
+                div.no-6{
+                    position: relative;
+                    left: 0;
+                    animation-name: discover-6;
+                    animation-duration: .5s;
+                    animation-iteration-count: 1;
+                }
+                @keyframes discover-6 {
+                    from{
+                        position: relative;
+                        left: -100%;
+                    }
+                    to{
+                        position: relative;
+                        left: 0;
+                    }
+                }
+                div.no-7{
+                    position: relative;
+                    right: 0;
+                    animation-name: discover-7;
+                    animation-duration: .5s;
+                    animation-iteration-count: 1;
+                }
+                @keyframes discover-7 {
+                    from{
+                        position: relative;
+                        right: -100%;
+                    }
+                    to{
+                        position: relative;
+                        right: 0;
+                    }
+                }
+                div.no-8{
+                    position: relative;
+                    right: 0;
+                    animation-name: discover-8;
+                    animation-duration: 1s;
+                    animation-iteration-count: 1;
+                }
+                @keyframes discover-8 {
+                    from{
+                        position: relative;
+                        right: -100%;
+                    }
+                    to{
+                        position: relative;
+                        right: 0;
+                    }
+                }
+            }
+    }
+}
+@media screen and (min-width:1200px) {
+    div.discover{
+        background-color: $color-secondary;
+        width: 100%;
+        overflow: hidden;
+        h2{
+            color: white;
+            font-size: 26px;
+            letter-spacing: 7px;
+        }
+        div.discover-links{
+            >a{
+                text-decoration: none;
+                color: white;
+                padding: 15px 20px;
+                font-size: 18px;
+                letter-spacing: 4px;
+                transition: .5s ease;
+                cursor: pointer;
+            }
+            >a:hover{
+                color: $color-primary;
+            }
+            >a.active{
+                color: $color-primary;
+            }
+        }
+        div.discover-menu, div.discover-burger, div.discover-dessert, div.discover-drink, div.discover-pasta, div.discover-salad{
+            overflow: hidden;
+            width: 100%;
+            div.discover-card{
+                width: 25%;
+                padding: 20px;
+                color: white;
+                transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                div.img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    position: relative;
+                    z-index: 9;
+                    overflow: hidden;
+                    img.img-pizza{
+                       width: 100%;
+                    }
+                    div.img-shop{
+                        width: 200px;
+                        height: 200px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        position: absolute;
+                        top: 0;
+                        left: -100%;
+                        border-radius: 50%;
+                        background-color: rgba($color: $color-primary, $alpha: 50%);
+                        transition: .5s ease;
+                        cursor: pointer;
+                        a{
+                            text-decoration: none;
+                            width: 100%;
+                            img{
+                                width: 25%;
+                                opacity: 100%; 
+                            }
+                        }
+                    }
+                }
+                
+                h3{
+                    padding: 20px 15px;
+                    font-size: 20px;
+                    letter-spacing: 4px;
+                    margin-top: 10px;
+                }
+                p{
+                    padding: 15px;
+                    font-size: 16px;
+                }
+                span{
+                    padding: 15px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-family: 'lato' ;
+                    letter-spacing: 3px;
+                }
+            }
+            div.discover-card:hover div.img div.img-shop{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            div.discover-card:hover{
+                transform: scale(1.1);
+            }
+            div.no-1, div.no-2, div.no-5, div.no-6{
+                position: relative;
+                left: -150%;
+            }
+            div.no-3, div.no-4, div.no-7, div.no-8{
+                position: relative;
+                right: -150%;
+            }
+        }
+        
+        div.discover-anime{
+            div.no-1{
+                position: relative;
+                left: 0;
+                animation-name: discover-1;
+                animation-duration: 1s;
+                animation-iteration-count: 1;
+            }
+            @keyframes discover-1 {
+                from{
+                    position: relative;
+                    left: -100%;
+                }
+                to{
+                    position: relative;
+                    left: 0;
+                }
+            }
+            div.no-2{
+                position: relative;
+                left: 0;
+                animation-name: discover-2;
+                animation-duration: .5s;
+                animation-iteration-count: 1;
+            }
+            @keyframes discover-2 {
+                from{
+                    position: relative;
+                    left: -100%;
+                }
+                to{
+                    position: relative;
+                    left: 0;
+                }
+            }
+            div.no-3{
+                position: relative;
+                right: 0;
+                animation-name: discover-3;
+                animation-duration: .5s;
+                animation-iteration-count: 1s;
+            }
+            @keyframes discover-3 {
+                from{
+                    position: relative;
+                    right: -100%;
+                }
+                to{
+                    position: relative;
+                    right: 0;
+                }
+            }
+            div.no-4{
+                position: relative;
+                right: 0;
+                animation-name: discover-4;
+                animation-duration: 1s;
+                animation-iteration-count: 1;
+            }
+            @keyframes discover-4 {
+                from{
+                    position: relative;
+                    right: -100%;
+                }
+                to{
+                    position: relative;
+                    right: 0;
+                }
+            }
+        }
+        div.discover-anime-2{
+                div.no-5{
+                    position: relative;
+                    left: 0;
+                    animation-name: discover-5;
+                    animation-duration: 1s;
+                    animation-iteration-count: 1;
+                }
+                @keyframes discover-5 {
+                    from{
+                        position: relative;
+                        left: -100%;
+                    }
+                    to{
+                        position: relative;
+                        left: 0;
+                    }
+                }
+                div.no-6{
+                    position: relative;
+                    left: 0;
+                    animation-name: discover-6;
+                    animation-duration: .5s;
+                    animation-iteration-count: 1;
+                }
+                @keyframes discover-6 {
+                    from{
+                        position: relative;
+                        left: -100%;
+                    }
+                    to{
+                        position: relative;
+                        left: 0;
+                    }
+                }
+                div.no-7{
+                    position: relative;
+                    right: 0;
+                    animation-name: discover-7;
+                    animation-duration: .5s;
+                    animation-iteration-count: 1;
+                }
+                @keyframes discover-7 {
+                    from{
+                        position: relative;
+                        right: -100%;
+                    }
+                    to{
+                        position: relative;
+                        right: 0;
+                    }
+                }
+                div.no-8{
+                    position: relative;
+                    right: 0;
+                    animation-name: discover-8;
+                    animation-duration: 1s;
+                    animation-iteration-count: 1;
+                }
+                @keyframes discover-8 {
+                    from{
+                        position: relative;
+                        right: -100%;
+                    }
+                    to{
+                        position: relative;
+                        right: 0;
+                    }
+                }
+            }
+    }
+}

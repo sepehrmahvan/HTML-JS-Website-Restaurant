@@ -1,0 +1,553 @@
+// 300 ---------------------------------------
+@media screen and (min-width:300px) {
+    header{
+        font-family: "PT Sans Narrow";
+        width: 100% !important;
+        padding: 10px 0 !important;
+        position: fixed;
+        top: 0;
+        z-index: 20;
+        a{
+            text-decoration: none;
+        }
+        div.logo{
+            width: 60%;
+            margin-bottom: 20px;
+        }
+        nav{
+            text-align: center;
+            .navbar{
+                width: 100%;
+                height: 60px;
+            }
+        }
+        div.add-to-card{
+            a{
+                text-decoration: none;
+                color: rgb(146, 146, 146)!important;
+                transition: 500ms;
+                font-size: 1vw;
+            }
+            a:hover{
+                color: $color-primary !important;
+            }
+            p.cost{
+                color: white;
+                letter-spacing: 3px;
+                margin: 0;
+                font-size: 1vw;
+                span{
+                    font-weight: 600;
+                    color: white !important;
+                    font-size: 1vw;
+                }
+            }
+            div.add-pic{
+                width: 30%;
+                img{
+                    filter: invert(100%);
+                    width: 100%;
+                    margin-bottom: 7px;
+                }
+            }
+        }
+        i{
+            font-size: 7vw;
+            color: white !important;
+            transition: 500ms;
+        }
+    }
+    .background-change{
+        background-color: $color-secondary;
+        border-bottom: 2px solid $color-primary;
+        animation-name: fade-header;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+    }
+    @keyframes fade-header {
+        from{
+            background-color: rgba(0, 0, 0, 0);
+            border-bottom: 2px solid rgba(0, 0, 0, 0);
+        }
+        to{
+            background-color: $color-secondary;
+            border-bottom: 2px solid $color-primary;
+        }
+    }
+    // header menu
+    header.menu{
+        height: 100vh;
+        position: fixed;
+        left: -80%;
+        width: 40% !important;
+        background-color: $color-secondary;
+        transition: 500ms;
+        border-right: 2px solid $color-primary;
+        a{
+            font-size: 3vw;
+            text-decoration: none;
+            color: white;
+            letter-spacing: 4px;
+            padding: 7px 10px 7px 0;
+            border-bottom: 2px solid $color-primary;
+        }
+    }
+    header.change{
+        position: fixed;
+        left: 0;
+    }
+}
+// 567 ---------------------------------------
+@media screen and (min-width:567px) {
+    header{
+        font-family: "PT Sans Narrow";
+        width: 100% !important;
+        padding: 10px 0 !important;
+        position: fixed;
+        top: 0;
+        z-index: 20;
+        a{
+            text-decoration: none;
+        }
+        div.logo{
+            width: 50%;
+            margin-bottom: 10px;
+            margin-left: 50px;
+        }
+        nav{
+            text-align: center;
+            .navbar{
+                width: 100%;
+                height: 60px;
+            }
+        }
+        div.add-to-card{
+            a{
+                text-decoration: none;
+                color: rgb(146, 146, 146)!important;
+                transition: 500ms;
+                font-size: 1vw;
+            }
+            a:hover{
+                color: $color-primary !important;
+            }
+            p.cost{
+                color: white;
+                letter-spacing: 3px;
+                margin: 0;
+                font-size: 1vw;
+                span{
+                    font-weight: 600;
+                    color: white !important;
+                    font-size: 1vw;
+                }
+            }
+            div.add-pic{
+                width: 40%;
+                img{
+                    filter: invert(100%);
+                    width: 100%;
+                    margin-bottom: 7px;
+                }
+            }
+        }
+        i{
+            font-size: 4vw;
+            color: white !important;
+            transition: 500ms;
+        }
+    }
+    // header menu
+    header.menu{
+        height: 100vh;
+        position: fixed;
+        left: -80%;
+        width: 40% !important;
+        background-color: $color-secondary;
+        transition: 500ms;
+        border-right: 2px solid $color-primary;
+        a{
+            font-size: 2vw;
+            text-decoration: none;
+            color: white;
+            letter-spacing: 4px;
+            padding: 7px 10px 7px 0;
+            border-bottom: 2px solid $color-primary;
+        }
+    }
+    header.change{
+        position: fixed;
+        left: 0;
+    }
+}
+// 768 ---------------------------------------
+@media screen and (min-width:768px) {
+    header{
+        font-family: "PT Sans Narrow";
+        width: 100% !important;
+        padding: 10px 0 !important;
+        position: fixed;
+        top: 0;
+        z-index: 20;
+        a{
+            text-decoration: none;
+        }
+        div.logo{
+            width: 40%;
+            margin-bottom: 20px;
+            margin-left: 90px;
+        }
+        nav{
+            text-align: center;
+            .navbar{
+                width: 100%;
+                height: 60px;
+            }
+        }
+        div.add-to-card{
+            a{
+                text-decoration: none;
+                color: rgb(146, 146, 146)!important;
+                transition: 500ms;
+                font-size: 1vw;
+            }
+            a:hover{
+                color: $color-primary !important;
+            }
+            p.cost{
+                color: white;
+                letter-spacing: 3px;
+                margin: 0;
+                font-size: 1vw;
+                span{
+                    font-weight: 600;
+                    color: white !important;
+                    font-size: 1vw;
+                }
+            }
+            div.add-pic{
+                width: 50%;
+                img{
+                    filter: invert(100%);
+                    width: 100%;
+                    margin-bottom: 7px;
+                }
+            }
+        }
+        i{
+            font-size: 4vw;
+            color: white !important;
+            transition: 500ms;
+        }
+    }
+    // header menu
+    header.menu{
+        height: 100vh;
+        position: fixed;
+        left: -80%;
+        width: 40% !important;
+        background-color: $color-secondary;
+        transition: 500ms;
+        border-right: 2px solid $color-primary;
+        a{
+            font-size: 2vw;
+            text-decoration: none;
+            color: white;
+            letter-spacing: 4px;
+            padding: 7px 10px 7px 0;
+            border-bottom: 2px solid $color-primary;
+        }
+    }
+    header.change{
+        position: fixed;
+        left: 0;
+    }
+}
+// 999 -----------------------------------
+@media screen and (min-width:999px) {
+    header{
+        font-family: "PT Sans Narrow";
+        width: 100% !important;
+        padding: 10px 0 !important;
+        position: fixed;
+        top: 0;
+        z-index: 20;
+        a{
+            text-decoration: none;
+        }
+        div.logo{
+            width: 7%;
+            margin: 0;
+        }
+        nav{
+            text-align: center;
+            .navbar{
+                width: 100%;
+                height: 60px;
+            }
+            // drop down ------------------------------
+            .navbar > ul{
+                display: flex;
+                justify-content: center;
+                list-style-type: none;	
+            }
+            
+            .navbar ul li{
+                position: relative;
+            }
+            
+            .navbar ul li a{
+                display: inline-block;
+                font-size: 1vw;
+                color: #fff;
+                text-align: center;
+                padding: 10px 15px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                transition: all 0.4s ease;
+            }
+            
+            .navbar ul li a:hover,
+            .navbar ul li a.a_parent.active,
+            .navbar .dd_menu ul li a:hover,
+            .navbar .dd_menu ul li a.active{
+                color: $color-primary;
+            }
+            
+            .navbar .dd_menu{
+                position: absolute;
+                top: 80px;
+                left: -70%;
+                width: 200px;
+                display: none;
+                border-radius: 10px;
+                padding: 10px 10px 30px 10px;
+                background-color: $color-secondary;
+            }
+            
+            .navbar .dd_menu a{
+                color: #fff;
+                text-align: left;	
+                padding: 15px;
+                border-bottom: 1px solid $color-primary;
+            }
+            
+            .navbar .dd_menu:before {
+                content: "";
+                position: absolute;
+                top: -30px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+                border: 15px solid;
+                border-color: transparent transparent rgba($color: $color-secondary, $alpha: 100%) transparent;
+            }
+            
+            .navbar ul li a.a_parent.active + .dd_menu{
+                display: block;
+            }
+            
+            .dd_submenu {
+                position: absolute;
+                top: 0;
+                left: 115%;
+                width: 100%;
+                display: none;
+            }
+            
+            .dd_submenu:before {
+                content: "";
+                position: absolute;
+                top: 15px;
+                left: -30px;
+                z-index: 1;
+                border: 15px solid;
+                border-color: transparent $color-secondary transparent transparent;
+            }
+            
+            .navbar ul li a.dd_menu_a.active + .dd_submenu{
+                display: block;
+            }
+    
+        }
+        div.add-to-card{
+            a{
+                text-decoration: none;
+                color: rgb(146, 146, 146)!important;
+                transition: 500ms;
+                font-size: 1vw;
+            }
+            a:hover{
+                color: $color-primary !important;
+            }
+            p.cost{
+                color: white;
+                letter-spacing: 3px;
+                margin: 0;
+                font-size: 1vw;
+                span{
+                    font-weight: 600;
+                    color: white !important;
+                    font-size: 1vw;
+                }
+            }
+            div.add-pic{
+                width: 25%;
+                img{
+                    filter: invert(100%);
+                    width: 100%;
+                    margin-bottom: 7px;
+                }
+            }
+        }
+        i{
+            font-size: 3vw;
+            color: white !important;
+            transition: 500ms;
+        }
+    }
+}
+// 1200 ------------------------------------------
+@media screen and (min-width:1200px) {
+    header{
+        font-family: "PT Sans Narrow";
+        width: 100% !important;
+        padding: 10px 0 !important;
+        position: fixed;
+        top: 0;
+        z-index: 20;
+        a{
+            text-decoration: none;
+        }
+        div.logo{
+            width: 7%;
+            margin: 0;
+        }
+        nav{
+            text-align: center;
+            .navbar{
+                width: 100%;
+                height: 60px;
+            }
+            // drop down ------------------------------
+            .navbar > ul{
+                display: flex;
+                justify-content: center;
+                list-style-type: none;	
+            }
+            
+            .navbar ul li{
+                position: relative;
+            }
+            
+            .navbar ul li a{
+                display: inline-block;
+                font-size: 1vw;
+                color: #fff;
+                text-align: center;
+                padding: 10px 15px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                transition: all 0.4s ease;
+            }
+            
+            .navbar ul li a:hover,
+            .navbar ul li a.a_parent.active,
+            .navbar .dd_menu ul li a:hover,
+            .navbar .dd_menu ul li a.active{
+                color: $color-primary;
+            }
+            
+            .navbar .dd_menu{
+                position: absolute;
+                top: 80px;
+                left: -70%;
+                width: 200px;
+                display: none;
+                border-radius: 10px;
+                padding: 10px 10px 30px 10px;
+                background-color: $color-secondary;
+            }
+            
+            .navbar .dd_menu a{
+                color: #fff;
+                text-align: left;	
+                padding: 15px;
+                border-bottom: 1px solid $color-primary;
+            }
+            
+            .navbar .dd_menu:before {
+                content: "";
+                position: absolute;
+                top: -30px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+                border: 15px solid;
+                border-color: transparent transparent rgba($color: $color-secondary, $alpha: 100%) transparent;
+            }
+            
+            .navbar ul li a.a_parent.active + .dd_menu{
+                display: block;
+            }
+            
+            .dd_submenu {
+                position: absolute;
+                top: 0;
+                left: 115%;
+                width: 100%;
+                display: none;
+            }
+            
+            .dd_submenu:before {
+                content: "";
+                position: absolute;
+                top: 15px;
+                left: -30px;
+                z-index: 1;
+                border: 15px solid;
+                border-color: transparent $color-secondary transparent transparent;
+            }
+            
+            .navbar ul li a.dd_menu_a.active + .dd_submenu{
+                display: block;
+            }
+    
+        }
+        div.add-to-card{
+            a{
+                text-decoration: none;
+                color: rgb(146, 146, 146)!important;
+                transition: 500ms;
+                font-size: 1vw;
+            }
+            a:hover{
+                color: $color-primary !important;
+            }
+            p.cost{
+                color: white;
+                letter-spacing: 3px;
+                margin: 0;
+                font-size: 1vw;
+                span{
+                    font-weight: 600;
+                    color: white !important;
+                    font-size: 1vw;
+                }
+            }
+            div.add-pic{
+                width: 25%;
+                img{
+                    filter: invert(100%);
+                    width: 100%;
+                    margin-bottom: 7px;
+                }
+            }
+        }
+        i{
+            font-size: 3vw;
+            color: white !important;
+            transition: 500ms;
+        }
+    }
+}

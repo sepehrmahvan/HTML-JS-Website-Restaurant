@@ -1,0 +1,6874 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media screen and (min-width: 300px) {
+  header {
+    font-family: "PT Sans Narrow";
+    width: 100% !important;
+    padding: 10px 0 !important;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+  }
+  header a {
+    text-decoration: none;
+  }
+  header div.logo {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  header nav {
+    text-align: center;
+  }
+  header nav .navbar {
+    width: 100%;
+    height: 60px;
+  }
+  header div.add-to-card a {
+    text-decoration: none;
+    color: rgb(146, 146, 146) !important;
+    transition: 500ms;
+    font-size: 1vw;
+  }
+  header div.add-to-card a:hover {
+    color: #ffc851 !important;
+  }
+  header div.add-to-card p.cost {
+    color: white;
+    letter-spacing: 3px;
+    margin: 0;
+    font-size: 1vw;
+  }
+  header div.add-to-card p.cost span {
+    font-weight: 600;
+    color: white !important;
+    font-size: 1vw;
+  }
+  header div.add-to-card div.add-pic {
+    width: 30%;
+  }
+  header div.add-to-card div.add-pic img {
+    filter: invert(100%);
+    width: 100%;
+    margin-bottom: 7px;
+  }
+  header i {
+    font-size: 7vw;
+    color: white !important;
+    transition: 500ms;
+  }
+  .background-change {
+    background-color: #121618;
+    border-bottom: 2px solid #ffc851;
+    -webkit-animation-name: fade-header;
+            animation-name: fade-header;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes fade-header {
+    from {
+      background-color: rgba(0, 0, 0, 0);
+      border-bottom: 2px solid rgba(0, 0, 0, 0);
+    }
+    to {
+      background-color: #121618;
+      border-bottom: 2px solid #ffc851;
+    }
+  }
+  @keyframes fade-header {
+    from {
+      background-color: rgba(0, 0, 0, 0);
+      border-bottom: 2px solid rgba(0, 0, 0, 0);
+    }
+    to {
+      background-color: #121618;
+      border-bottom: 2px solid #ffc851;
+    }
+  }
+  header.menu {
+    height: 100vh;
+    position: fixed;
+    left: -80%;
+    width: 40% !important;
+    background-color: #121618;
+    transition: 500ms;
+    border-right: 2px solid #ffc851;
+  }
+  header.menu a {
+    font-size: 3vw;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 4px;
+    padding: 7px 10px 7px 0;
+    border-bottom: 2px solid #ffc851;
+  }
+  header.change {
+    position: fixed;
+    left: 0;
+  }
+}
+@media screen and (min-width: 567px) {
+  header {
+    font-family: "PT Sans Narrow";
+    width: 100% !important;
+    padding: 10px 0 !important;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+  }
+  header a {
+    text-decoration: none;
+  }
+  header div.logo {
+    width: 50%;
+    margin-bottom: 10px;
+    margin-left: 50px;
+  }
+  header nav {
+    text-align: center;
+  }
+  header nav .navbar {
+    width: 100%;
+    height: 60px;
+  }
+  header div.add-to-card a {
+    text-decoration: none;
+    color: rgb(146, 146, 146) !important;
+    transition: 500ms;
+    font-size: 1vw;
+  }
+  header div.add-to-card a:hover {
+    color: #ffc851 !important;
+  }
+  header div.add-to-card p.cost {
+    color: white;
+    letter-spacing: 3px;
+    margin: 0;
+    font-size: 1vw;
+  }
+  header div.add-to-card p.cost span {
+    font-weight: 600;
+    color: white !important;
+    font-size: 1vw;
+  }
+  header div.add-to-card div.add-pic {
+    width: 40%;
+  }
+  header div.add-to-card div.add-pic img {
+    filter: invert(100%);
+    width: 100%;
+    margin-bottom: 7px;
+  }
+  header i {
+    font-size: 4vw;
+    color: white !important;
+    transition: 500ms;
+  }
+  header.menu {
+    height: 100vh;
+    position: fixed;
+    left: -80%;
+    width: 40% !important;
+    background-color: #121618;
+    transition: 500ms;
+    border-right: 2px solid #ffc851;
+  }
+  header.menu a {
+    font-size: 2vw;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 4px;
+    padding: 7px 10px 7px 0;
+    border-bottom: 2px solid #ffc851;
+  }
+  header.change {
+    position: fixed;
+    left: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    font-family: "PT Sans Narrow";
+    width: 100% !important;
+    padding: 10px 0 !important;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+  }
+  header a {
+    text-decoration: none;
+  }
+  header div.logo {
+    width: 40%;
+    margin-bottom: 20px;
+    margin-left: 90px;
+  }
+  header nav {
+    text-align: center;
+  }
+  header nav .navbar {
+    width: 100%;
+    height: 60px;
+  }
+  header div.add-to-card a {
+    text-decoration: none;
+    color: rgb(146, 146, 146) !important;
+    transition: 500ms;
+    font-size: 1vw;
+  }
+  header div.add-to-card a:hover {
+    color: #ffc851 !important;
+  }
+  header div.add-to-card p.cost {
+    color: white;
+    letter-spacing: 3px;
+    margin: 0;
+    font-size: 1vw;
+  }
+  header div.add-to-card p.cost span {
+    font-weight: 600;
+    color: white !important;
+    font-size: 1vw;
+  }
+  header div.add-to-card div.add-pic {
+    width: 50%;
+  }
+  header div.add-to-card div.add-pic img {
+    filter: invert(100%);
+    width: 100%;
+    margin-bottom: 7px;
+  }
+  header i {
+    font-size: 4vw;
+    color: white !important;
+    transition: 500ms;
+  }
+  header.menu {
+    height: 100vh;
+    position: fixed;
+    left: -80%;
+    width: 40% !important;
+    background-color: #121618;
+    transition: 500ms;
+    border-right: 2px solid #ffc851;
+  }
+  header.menu a {
+    font-size: 2vw;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 4px;
+    padding: 7px 10px 7px 0;
+    border-bottom: 2px solid #ffc851;
+  }
+  header.change {
+    position: fixed;
+    left: 0;
+  }
+}
+@media screen and (min-width: 999px) {
+  header {
+    font-family: "PT Sans Narrow";
+    width: 100% !important;
+    padding: 10px 0 !important;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+  }
+  header a {
+    text-decoration: none;
+  }
+  header div.logo {
+    width: 7%;
+    margin: 0;
+  }
+  header nav {
+    text-align: center;
+  }
+  header nav .navbar {
+    width: 100%;
+    height: 60px;
+  }
+  header nav .navbar > ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  header nav .navbar ul li {
+    position: relative;
+  }
+  header nav .navbar ul li a {
+    display: inline-block;
+    font-size: 1vw;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+  }
+  header nav .navbar ul li a:hover,
+header nav .navbar ul li a.a_parent.active,
+header nav .navbar .dd_menu ul li a:hover,
+header nav .navbar .dd_menu ul li a.active {
+    color: #ffc851;
+  }
+  header nav .navbar .dd_menu {
+    position: absolute;
+    top: 80px;
+    left: -70%;
+    width: 200px;
+    display: none;
+    border-radius: 10px;
+    padding: 10px 10px 30px 10px;
+    background-color: #121618;
+  }
+  header nav .navbar .dd_menu a {
+    color: #fff;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ffc851;
+  }
+  header nav .navbar .dd_menu:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border: 15px solid;
+    border-color: transparent transparent #121618 transparent;
+  }
+  header nav .navbar ul li a.a_parent.active + .dd_menu {
+    display: block;
+  }
+  header nav .dd_submenu {
+    position: absolute;
+    top: 0;
+    left: 115%;
+    width: 100%;
+    display: none;
+  }
+  header nav .dd_submenu:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -30px;
+    z-index: 1;
+    border: 15px solid;
+    border-color: transparent #121618 transparent transparent;
+  }
+  header nav .navbar ul li a.dd_menu_a.active + .dd_submenu {
+    display: block;
+  }
+  header div.add-to-card a {
+    text-decoration: none;
+    color: rgb(146, 146, 146) !important;
+    transition: 500ms;
+    font-size: 1vw;
+  }
+  header div.add-to-card a:hover {
+    color: #ffc851 !important;
+  }
+  header div.add-to-card p.cost {
+    color: white;
+    letter-spacing: 3px;
+    margin: 0;
+    font-size: 1vw;
+  }
+  header div.add-to-card p.cost span {
+    font-weight: 600;
+    color: white !important;
+    font-size: 1vw;
+  }
+  header div.add-to-card div.add-pic {
+    width: 25%;
+  }
+  header div.add-to-card div.add-pic img {
+    filter: invert(100%);
+    width: 100%;
+    margin-bottom: 7px;
+  }
+  header i {
+    font-size: 3vw;
+    color: white !important;
+    transition: 500ms;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    font-family: "PT Sans Narrow";
+    width: 100% !important;
+    padding: 10px 0 !important;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+  }
+  header a {
+    text-decoration: none;
+  }
+  header div.logo {
+    width: 7%;
+    margin: 0;
+  }
+  header nav {
+    text-align: center;
+  }
+  header nav .navbar {
+    width: 100%;
+    height: 60px;
+  }
+  header nav .navbar > ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  header nav .navbar ul li {
+    position: relative;
+  }
+  header nav .navbar ul li a {
+    display: inline-block;
+    font-size: 1vw;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+  }
+  header nav .navbar ul li a:hover,
+header nav .navbar ul li a.a_parent.active,
+header nav .navbar .dd_menu ul li a:hover,
+header nav .navbar .dd_menu ul li a.active {
+    color: #ffc851;
+  }
+  header nav .navbar .dd_menu {
+    position: absolute;
+    top: 80px;
+    left: -70%;
+    width: 200px;
+    display: none;
+    border-radius: 10px;
+    padding: 10px 10px 30px 10px;
+    background-color: #121618;
+  }
+  header nav .navbar .dd_menu a {
+    color: #fff;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ffc851;
+  }
+  header nav .navbar .dd_menu:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border: 15px solid;
+    border-color: transparent transparent #121618 transparent;
+  }
+  header nav .navbar ul li a.a_parent.active + .dd_menu {
+    display: block;
+  }
+  header nav .dd_submenu {
+    position: absolute;
+    top: 0;
+    left: 115%;
+    width: 100%;
+    display: none;
+  }
+  header nav .dd_submenu:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -30px;
+    z-index: 1;
+    border: 15px solid;
+    border-color: transparent #121618 transparent transparent;
+  }
+  header nav .navbar ul li a.dd_menu_a.active + .dd_submenu {
+    display: block;
+  }
+  header div.add-to-card a {
+    text-decoration: none;
+    color: rgb(146, 146, 146) !important;
+    transition: 500ms;
+    font-size: 1vw;
+  }
+  header div.add-to-card a:hover {
+    color: #ffc851 !important;
+  }
+  header div.add-to-card p.cost {
+    color: white;
+    letter-spacing: 3px;
+    margin: 0;
+    font-size: 1vw;
+  }
+  header div.add-to-card p.cost span {
+    font-weight: 600;
+    color: white !important;
+    font-size: 1vw;
+  }
+  header div.add-to-card div.add-pic {
+    width: 25%;
+  }
+  header div.add-to-card div.add-pic img {
+    filter: invert(100%);
+    width: 100%;
+    margin-bottom: 7px;
+  }
+  header i {
+    font-size: 3vw;
+    color: white !important;
+    transition: 500ms;
+  }
+}
+@media screen and (min-width: 300px) {
+  div.slide-show {
+    width: 100%;
+    position: relative;
+    transition: 1s ease-in-out;
+    background-color: black;
+  }
+  div.slide-show div.prev, div.slide-show div.next {
+    color: white;
+    font-size: 7vw;
+  }
+  div.slide-show div.prev:hover, div.slide-show div.next:hover {
+    color: #ffc851;
+    cursor: pointer;
+  }
+  div.slide-show div.prev {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  div.slide-show div.next {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  div.slide-show div.no-1 {
+    background-image: url(img/slide-3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-family: "PT Sans Narrow";
+    overflow: hidden;
+  }
+  div.slide-show div.no-1 div.pizza {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 70%;
+  }
+  div.slide-show div.no-1 div.pizza img {
+    width: 65%;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: move;
+            animation-name: move;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes move {
+    from {
+      position: absolute;
+      left: -50%;
+      top: 55%;
+    }
+    to {
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes move {
+    from {
+      position: absolute;
+      left: -50%;
+      top: 55%;
+    }
+    to {
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-1 div.details {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 90%;
+  }
+  div.slide-show div.no-1 div.details h2 {
+    color: white;
+    letter-spacing: 12px;
+    font-size: 8vw;
+    position: absolute;
+    top: 35%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-animation-name: change;
+            animation-name: change;
+    -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes change {
+    from {
+      position: absolute;
+      top: 35%;
+      right: -100%;
+    }
+    to {
+      position: absolute;
+      top: 35%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  @keyframes change {
+    from {
+      position: absolute;
+      top: 35%;
+      right: -100%;
+    }
+    to {
+      position: absolute;
+      top: 35%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  div.slide-show div.no-1 div.details p {
+    color: white;
+    letter-spacing: 4px;
+    font-size: 3vw;
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-animation-name: details;
+            animation-name: details;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes details {
+    from {
+      position: absolute;
+      top: 55%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 55%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  @keyframes details {
+    from {
+      position: absolute;
+      top: 55%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 55%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 {
+    background-image: url(img/slide_2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    font-family: "PT Sans Narrow";
+  }
+  div.slide-show div.no-2 h3 {
+    color: white;
+    width: 90%;
+    font-size: 4vw;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: h3;
+            animation-name: h3;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h3 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    to {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes h3 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    to {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 h2 {
+    color: white;
+    width: 90%;
+    font-size: 7vw;
+    letter-spacing: 8px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: h2;
+            animation-name: h2;
+    -webkit-animation-duration: 0.25s;
+            animation-duration: 0.25s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h2 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes h2 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 p {
+    color: white;
+    width: 80%;
+    font-size: 3vw;
+    letter-spacing: 4px;
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: p;
+            animation-name: p;
+    -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes p {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes p {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 3vw;
+    letter-spacing: 3px;
+    position: absolute;
+    bottom: 30%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    background-color: #ffc851;
+    padding: 10px 15px;
+    font-weight: 400;
+    border: 2px solid #ffc851;
+    transition: 0.5s ease;
+    -webkit-animation-name: a;
+            animation-name: a;
+    -webkit-animation-duration: 0.9s;
+            animation-duration: 0.9s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes a {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 49%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 30%;
+      left: 49%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes a {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 49%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 30%;
+      left: 49%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 a:hover {
+    border: 2px solid #ffc851;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffc851;
+  }
+  div.slide-show div.no-3 {
+    background-image: url(img/slide_1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "PT Sans Narrow";
+  }
+  div.slide-show div.no-3 div.details {
+    position: relative;
+    text-align: center !important;
+    height: 50vh;
+    width: 100% !important;
+  }
+  div.slide-show div.no-3 div.details h2 {
+    color: white;
+    text-align: center;
+    letter-spacing: 8px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8vw;
+    -webkit-animation-name: h2-2;
+            animation-name: h2-2;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h2-2 {
+    from {
+      position: absolute;
+      top: 30%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 30%;
+      left: -50%;
+    }
+  }
+  @keyframes h2-2 {
+    from {
+      position: absolute;
+      top: 30%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 30%;
+      left: -50%;
+    }
+  }
+  div.slide-show div.no-3 div.details h3 {
+    color: white;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    -webkit-animation-name: h3-2;
+            animation-name: h3-2;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    width: 90%;
+  }
+  @-webkit-keyframes h3-2 {
+    from {
+      position: absolute;
+      top: 50%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  }
+  @keyframes h3-2 {
+    from {
+      position: absolute;
+      top: 50%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.details P {
+    color: white;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    -webkit-animation-name: p-2;
+            animation-name: p-2;
+    -webkit-animation-duration: 0.7s;
+            animation-duration: 0.7s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    width: 90%;
+  }
+  @-webkit-keyframes p-2 {
+    from {
+      position: absolute;
+      top: 65%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translateY(-50%, -50%);
+    }
+  }
+  @keyframes p-2 {
+    from {
+      position: absolute;
+      top: 65%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translateY(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-3 div.details div.link-pizza {
+    position: absolute;
+    left: 50%;
+    bottom: 6%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: link-pizza;
+            animation-name: link-pizza;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    width: 100%;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #order {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 2vw;
+    padding: 10px 15px;
+    border: 2px solid white;
+    transition: 0.5s ease;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #order:hover {
+    border-color: #ffc851;
+    color: #ffc851;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #view {
+    color: black;
+    margin-left: 15px;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 2vw;
+    padding: 10px 15px;
+    background-color: #ffc851;
+    border: 2px solid #ffc851;
+    transition: 0.5s ease;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #view:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffc851;
+  }
+  @-webkit-keyframes link-pizza {
+    from {
+      position: absolute;
+      bottom: -35%;
+      left: 50%;
+    }
+    to {
+      position: absolute;
+      bottom: 6%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes link-pizza {
+    from {
+      position: absolute;
+      bottom: -35%;
+      left: 50%;
+    }
+    to {
+      position: absolute;
+      bottom: 6%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-3 div.pizza {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+  }
+  div.slide-show div.no-3 div.pizza img {
+    width: 38%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-animation-name: pizza-2;
+            animation-name: pizza-2;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes pizza-2 {
+    from {
+      position: absolute;
+      top: 50%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  @keyframes pizza-2 {
+    from {
+      position: absolute;
+      top: 50%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  div.slide-show div.my-slide {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 567px) {
+  div.slide-show {
+    width: 100%;
+    position: relative;
+    transition: 1s ease-in-out;
+    background-color: black;
+  }
+  div.slide-show div.prev, div.slide-show div.next {
+    color: white;
+    font-size: 5vw;
+  }
+  div.slide-show div.prev:hover, div.slide-show div.next:hover {
+    color: #ffc851;
+    cursor: pointer;
+  }
+  div.slide-show div.prev {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  div.slide-show div.next {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  div.slide-show div.no-1 {
+    background-image: url(img/slide-3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+  }
+  div.slide-show div.no-1 div.pizza {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 70%;
+  }
+  div.slide-show div.no-1 div.pizza img {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: move;
+            animation-name: move;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes move {
+    from {
+      position: absolute;
+      left: -50%;
+      top: 55%;
+    }
+    to {
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes move {
+    from {
+      position: absolute;
+      left: -50%;
+      top: 55%;
+    }
+    to {
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-1 div.details {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 90%;
+  }
+  div.slide-show div.no-1 div.details h2 {
+    color: white;
+    letter-spacing: 12px;
+    font-size: 5vw;
+    position: absolute;
+    top: 35%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-animation-name: change;
+            animation-name: change;
+    -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes change {
+    from {
+      position: absolute;
+      top: 35%;
+      right: -100%;
+    }
+    to {
+      position: absolute;
+      top: 35%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  @keyframes change {
+    from {
+      position: absolute;
+      top: 35%;
+      right: -100%;
+    }
+    to {
+      position: absolute;
+      top: 35%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  div.slide-show div.no-1 div.details p {
+    color: white;
+    letter-spacing: 4px;
+    font-size: 2vw;
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-animation-name: details;
+            animation-name: details;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes details {
+    from {
+      position: absolute;
+      top: 55%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 55%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  @keyframes details {
+    from {
+      position: absolute;
+      top: 55%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 55%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 {
+    background-image: url(img/slide_2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  div.slide-show div.no-2 h3 {
+    color: white;
+    font-size: 3vw;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 35%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: h3;
+            animation-name: h3;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h3 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 49.5%;
+      transform: translate(-50%, -50%);
+    }
+    to {
+      position: absolute;
+      top: 35%;
+      left: 49.5%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes h3 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 49.5%;
+      transform: translate(-50%, -50%);
+    }
+    to {
+      position: absolute;
+      top: 35%;
+      left: 49.5%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 h2 {
+    color: white;
+    font-size: 5vw;
+    letter-spacing: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: h2;
+            animation-name: h2;
+    -webkit-animation-duration: 0.25s;
+            animation-duration: 0.25s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h2 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes h2 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 p {
+    color: white;
+    font-size: 2vw;
+    letter-spacing: 4px;
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: p;
+            animation-name: p;
+    -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes p {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 28%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes p {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 28%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 2vw;
+    letter-spacing: 3px;
+    position: absolute;
+    bottom: 12%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    background-color: #ffc851;
+    padding: 10px 15px;
+    font-weight: 400;
+    border: 2px solid #ffc851;
+    transition: 0.5s ease;
+    -webkit-animation-name: a;
+            animation-name: a;
+    -webkit-animation-duration: 0.9s;
+            animation-duration: 0.9s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes a {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 49%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 12%;
+      left: 49%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes a {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 49%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 12%;
+      left: 49%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 a:hover {
+    border: 2px solid #ffc851;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffc851;
+  }
+  div.slide-show div.no-3 {
+    background-image: url(img/slide_1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  div.slide-show div.no-3 div.details {
+    width: 100% !important;
+    height: 50vh;
+    position: relative;
+    text-align: center !important;
+  }
+  div.slide-show div.no-3 div.details h2 {
+    color: white;
+    width: 90%;
+    letter-spacing: 8px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    -webkit-animation-name: h2-2;
+            animation-name: h2-2;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h2-2 {
+    from {
+      position: absolute;
+      top: 30%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+    }
+  }
+  @keyframes h2-2 {
+    from {
+      position: absolute;
+      top: 30%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.details h3 {
+    color: white;
+    width: 90%;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    -webkit-animation-name: h3-2;
+            animation-name: h3-2;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h3-2 {
+    from {
+      position: absolute;
+      top: 50%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  }
+  @keyframes h3-2 {
+    from {
+      position: absolute;
+      top: 50%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.details P {
+    color: white;
+    width: 90%;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    -webkit-animation-name: p-2;
+            animation-name: p-2;
+    -webkit-animation-duration: 0.7s;
+            animation-duration: 0.7s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes p-2 {
+    from {
+      position: absolute;
+      top: 63%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 63%;
+      left: 50%;
+    }
+  }
+  @keyframes p-2 {
+    from {
+      position: absolute;
+      top: 63%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 63%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.details div.link-pizza {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: link-pizza;
+            animation-name: link-pizza;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #order {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 2vw;
+    padding: 10px 15px;
+    border: 2px solid white;
+    transition: 0.5s ease;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #order:hover {
+    border-color: #ffc851;
+    color: #ffc851;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #view {
+    color: black;
+    margin-left: 15px;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 2vw;
+    padding: 10px 15px;
+    background-color: #ffc851;
+    border: 2px solid #ffc851;
+    transition: 0.5s ease;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #view:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffc851;
+  }
+  @-webkit-keyframes link-pizza {
+    from {
+      position: absolute;
+      bottom: -35%;
+      left: 50%;
+    }
+    to {
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+    }
+  }
+  @keyframes link-pizza {
+    from {
+      position: absolute;
+      bottom: -35%;
+      left: 50%;
+    }
+    to {
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.pizza {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+  }
+  div.slide-show div.no-3 div.pizza img {
+    width: 28%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-animation-name: pizza-2;
+            animation-name: pizza-2;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes pizza-2 {
+    from {
+      position: absolute;
+      top: 50%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  @keyframes pizza-2 {
+    from {
+      position: absolute;
+      top: 50%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  div.slide-show div.my-slide {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  div.slide-show {
+    width: 100%;
+    position: relative;
+    transition: 1s ease-in-out;
+    background-color: black;
+  }
+  div.slide-show div.prev, div.slide-show div.next {
+    color: white;
+    font-size: 4vw;
+  }
+  div.slide-show div.prev:hover, div.slide-show div.next:hover {
+    color: #ffc851;
+    cursor: pointer;
+  }
+  div.slide-show div.prev {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  div.slide-show div.next {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  div.slide-show div.no-1 {
+    background-image: url(img/slide-3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+  }
+  div.slide-show div.no-1 div.pizza {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 50%;
+  }
+  div.slide-show div.no-1 div.pizza img {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: move;
+            animation-name: move;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes move {
+    from {
+      position: absolute;
+      left: -50%;
+      top: 55%;
+    }
+    to {
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes move {
+    from {
+      position: absolute;
+      left: -50%;
+      top: 55%;
+    }
+    to {
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-1 div.details {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 50%;
+  }
+  div.slide-show div.no-1 div.details h2 {
+    color: white;
+    letter-spacing: 12px;
+    font-size: 5vw;
+    position: absolute;
+    top: 45%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-animation-name: change;
+            animation-name: change;
+    -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes change {
+    from {
+      position: absolute;
+      top: 45%;
+      right: -100%;
+    }
+    to {
+      position: absolute;
+      top: 45%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  @keyframes change {
+    from {
+      position: absolute;
+      top: 45%;
+      right: -100%;
+    }
+    to {
+      position: absolute;
+      top: 45%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  div.slide-show div.no-1 div.details p {
+    color: white;
+    letter-spacing: 4px;
+    font-size: 2vw;
+    width: 80%;
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-animation-name: details;
+            animation-name: details;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes details {
+    from {
+      position: absolute;
+      top: 60%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 60%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  @keyframes details {
+    from {
+      position: absolute;
+      top: 60%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 60%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 {
+    background-image: url(img/slide_2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  div.slide-show div.no-2 h3 {
+    color: white;
+    font-size: 3vw;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: h3;
+            animation-name: h3;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h3 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    to {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes h3 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    to {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 h2 {
+    color: white;
+    font-size: 5vw;
+    letter-spacing: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: h2;
+            animation-name: h2;
+    -webkit-animation-duration: 0.25s;
+            animation-duration: 0.25s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h2 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes h2 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 p {
+    color: white;
+    font-size: 2vw;
+    letter-spacing: 4px;
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: p;
+            animation-name: p;
+    -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes p {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 28%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes p {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 28%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 2vw;
+    letter-spacing: 3px;
+    position: absolute;
+    bottom: 12%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    background-color: #ffc851;
+    padding: 10px 15px;
+    font-weight: 400;
+    border: 2px solid #ffc851;
+    transition: 0.5s ease;
+    -webkit-animation-name: a;
+            animation-name: a;
+    -webkit-animation-duration: 0.9s;
+            animation-duration: 0.9s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes a {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 49%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 12%;
+      left: 49%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes a {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 49%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 12%;
+      left: 49%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 a:hover {
+    border: 2px solid #ffc851;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffc851;
+  }
+  div.slide-show div.no-3 {
+    background-image: url(img/slide_1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  div.slide-show div.no-3 div.details {
+    width: 35% !important;
+    height: 80vh;
+    position: relative;
+    text-align: center !important;
+  }
+  div.slide-show div.no-3 div.details h2 {
+    color: white;
+    width: 90%;
+    letter-spacing: 8px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    -webkit-animation-name: h2-2;
+            animation-name: h2-2;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h2-2 {
+    from {
+      position: absolute;
+      top: 30%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+    }
+  }
+  @keyframes h2-2 {
+    from {
+      position: absolute;
+      top: 30%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.details h3 {
+    color: white;
+    width: 90%;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    -webkit-animation-name: h3-2;
+            animation-name: h3-2;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h3-2 {
+    from {
+      position: absolute;
+      top: 45%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+    }
+  }
+  @keyframes h3-2 {
+    from {
+      position: absolute;
+      top: 45%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.details P {
+    color: white;
+    width: 90%;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1vw;
+    -webkit-animation-name: p-2;
+            animation-name: p-2;
+    -webkit-animation-duration: 0.7s;
+            animation-duration: 0.7s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes p-2 {
+    from {
+      position: absolute;
+      top: 60%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+    }
+  }
+  @keyframes p-2 {
+    from {
+      position: absolute;
+      top: 60%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.details div.link-pizza {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: link-pizza-2;
+            animation-name: link-pizza-2;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #order {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 1vw;
+    padding: 10px 15px;
+    border: 2px solid white;
+    transition: 0.5s ease;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #order:hover {
+    border-color: #ffc851;
+    color: #ffc851;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #view {
+    color: black;
+    margin-left: 15px;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 1vw;
+    padding: 10px 15px;
+    background-color: #ffc851;
+    border: 2px solid #ffc851;
+    transition: 0.5s ease;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #view:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffc851;
+  }
+  @-webkit-keyframes link-pizza-2 {
+    from {
+      position: absolute;
+      bottom: -40%;
+      left: 50%;
+    }
+    to {
+      position: absolute;
+      bottom: 15%;
+      left: 50%;
+    }
+  }
+  @keyframes link-pizza-2 {
+    from {
+      position: absolute;
+      bottom: -40%;
+      left: 50%;
+    }
+    to {
+      position: absolute;
+      bottom: 15%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.pizza {
+    position: relative;
+    width: 50%;
+    height: 80vh;
+  }
+  div.slide-show div.no-3 div.pizza img {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-animation-name: pizza-2;
+            animation-name: pizza-2;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes pizza-2 {
+    from {
+      position: absolute;
+      top: 50%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  @keyframes pizza-2 {
+    from {
+      position: absolute;
+      top: 50%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  div.slide-show div.my-slide {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 999px) {
+  div.slide-show {
+    width: 100%;
+    position: relative;
+    transition: 1s ease-in-out;
+    background-color: black;
+  }
+  div.slide-show div.prev, div.slide-show div.next {
+    color: white;
+    font-size: 3vw;
+  }
+  div.slide-show div.prev:hover, div.slide-show div.next:hover {
+    color: #ffc851;
+    cursor: pointer;
+  }
+  div.slide-show div.prev {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  div.slide-show div.next {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  div.slide-show div.no-1 {
+    background-image: url(img/slide-3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+  }
+  div.slide-show div.no-1 div.pizza {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 50%;
+  }
+  div.slide-show div.no-1 div.pizza img {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: move;
+            animation-name: move;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes move {
+    from {
+      position: absolute;
+      left: -50%;
+      top: 55%;
+    }
+    to {
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes move {
+    from {
+      position: absolute;
+      left: -50%;
+      top: 55%;
+    }
+    to {
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-1 div.details {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 50%;
+  }
+  div.slide-show div.no-1 div.details h2 {
+    color: white;
+    letter-spacing: 12px;
+    font-size: 4vw;
+    position: absolute;
+    top: 45%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-animation-name: change;
+            animation-name: change;
+    -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes change {
+    from {
+      position: absolute;
+      top: 45%;
+      right: -100%;
+    }
+    to {
+      position: absolute;
+      top: 45%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  @keyframes change {
+    from {
+      position: absolute;
+      top: 45%;
+      right: -100%;
+    }
+    to {
+      position: absolute;
+      top: 45%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  div.slide-show div.no-1 div.details p {
+    color: white;
+    letter-spacing: 4px;
+    font-size: 1vw;
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-animation-name: details;
+            animation-name: details;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes details {
+    from {
+      position: absolute;
+      top: 55%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 55%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  @keyframes details {
+    from {
+      position: absolute;
+      top: 55%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 55%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 {
+    background-image: url(img/slide_2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  div.slide-show div.no-2 h3 {
+    color: white;
+    font-size: 2vw;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: h3;
+            animation-name: h3;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h3 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    to {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes h3 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    to {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 h2 {
+    color: white;
+    font-size: 4vw;
+    letter-spacing: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: h2;
+            animation-name: h2;
+    -webkit-animation-duration: 0.25s;
+            animation-duration: 0.25s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h2 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes h2 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 p {
+    color: white;
+    font-size: 1vw;
+    letter-spacing: 4px;
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: p;
+            animation-name: p;
+    -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes p {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 28%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes p {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 28%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 1vw;
+    letter-spacing: 3px;
+    position: absolute;
+    bottom: 13%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    background-color: #ffc851;
+    padding: 10px 15px;
+    font-weight: 400;
+    border: 2px solid #ffc851;
+    transition: 0.5s ease;
+    -webkit-animation-name: a;
+            animation-name: a;
+    -webkit-animation-duration: 0.9s;
+            animation-duration: 0.9s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes a {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 49%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 13%;
+      left: 49%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes a {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 49%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 13%;
+      left: 49%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 a:hover {
+    border: 2px solid #ffc851;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffc851;
+  }
+  div.slide-show div.no-3 {
+    background-image: url(img/slide_1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  div.slide-show div.no-3 div.details {
+    width: 35% !important;
+    position: relative;
+    text-align: center !important;
+  }
+  div.slide-show div.no-3 div.details h2 {
+    color: white;
+    letter-spacing: 8px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    -webkit-animation-name: h2-2;
+            animation-name: h2-2;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h2-2 {
+    from {
+      position: absolute;
+      top: 30%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+    }
+  }
+  @keyframes h2-2 {
+    from {
+      position: absolute;
+      top: 30%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.details h3 {
+    color: white;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    -webkit-animation-name: h3-2;
+            animation-name: h3-2;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h3-2 {
+    from {
+      position: absolute;
+      top: 45%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+    }
+  }
+  @keyframes h3-2 {
+    from {
+      position: absolute;
+      top: 45%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.details P {
+    color: white;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1vw;
+    -webkit-animation-name: p-2;
+            animation-name: p-2;
+    -webkit-animation-duration: 0.7s;
+            animation-duration: 0.7s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes p-2 {
+    from {
+      position: absolute;
+      top: 60%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+    }
+  }
+  @keyframes p-2 {
+    from {
+      position: absolute;
+      top: 60%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.details div.link-pizza {
+    position: absolute;
+    left: 50%;
+    bottom: 17%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: link-pizza;
+            animation-name: link-pizza;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #order {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 1vw;
+    padding: 10px 15px;
+    border: 2px solid white;
+    transition: 0.5s ease;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #order:hover {
+    border-color: #ffc851;
+    color: #ffc851;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #view {
+    color: black;
+    margin-left: 15px;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 1vw;
+    padding: 10px 15px;
+    background-color: #ffc851;
+    border: 2px solid #ffc851;
+    transition: 0.5s ease;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #view:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffc851;
+  }
+  @-webkit-keyframes link-pizza {
+    from {
+      position: absolute;
+      bottom: -17%;
+      left: 50%;
+    }
+    to {
+      position: absolute;
+      bottom: 17%;
+      left: 50%;
+    }
+  }
+  @keyframes link-pizza {
+    from {
+      position: absolute;
+      bottom: -17%;
+      left: 50%;
+    }
+    to {
+      position: absolute;
+      bottom: 17%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.pizza {
+    position: relative;
+  }
+  div.slide-show div.no-3 div.pizza img {
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-animation-name: pizza-2;
+            animation-name: pizza-2;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes pizza-2 {
+    from {
+      position: absolute;
+      top: 50%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  @keyframes pizza-2 {
+    from {
+      position: absolute;
+      top: 50%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  div.slide-show div.my-slide {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.slide-show {
+    width: 100%;
+    position: relative;
+    transition: 1s ease-in-out;
+    background-color: black;
+  }
+  div.slide-show div.prev, div.slide-show div.next {
+    color: white;
+    font-size: 3vw;
+  }
+  div.slide-show div.prev:hover, div.slide-show div.next:hover {
+    color: #ffc851;
+    cursor: pointer;
+  }
+  div.slide-show div.prev {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  div.slide-show div.next {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  div.slide-show div.no-1 {
+    background-image: url(img/slide-3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+  }
+  div.slide-show div.no-1 div.pizza {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 50%;
+  }
+  div.slide-show div.no-1 div.pizza img {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: move;
+            animation-name: move;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes move {
+    from {
+      position: absolute;
+      left: -50%;
+      top: 55%;
+    }
+    to {
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes move {
+    from {
+      position: absolute;
+      left: -50%;
+      top: 55%;
+    }
+    to {
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-1 div.details {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 50%;
+  }
+  div.slide-show div.no-1 div.details h2 {
+    color: white;
+    letter-spacing: 12px;
+    font-size: 4vw;
+    position: absolute;
+    top: 45%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-animation-name: change;
+            animation-name: change;
+    -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes change {
+    from {
+      position: absolute;
+      top: 45%;
+      right: -100%;
+    }
+    to {
+      position: absolute;
+      top: 45%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  @keyframes change {
+    from {
+      position: absolute;
+      top: 45%;
+      right: -100%;
+    }
+    to {
+      position: absolute;
+      top: 45%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  div.slide-show div.no-1 div.details p {
+    color: white;
+    letter-spacing: 4px;
+    font-size: 1vw;
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-animation-name: details;
+            animation-name: details;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes details {
+    from {
+      position: absolute;
+      top: 55%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 55%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  @keyframes details {
+    from {
+      position: absolute;
+      top: 55%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 55%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 {
+    background-image: url(img/slide_2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  div.slide-show div.no-2 h3 {
+    color: white;
+    font-size: 2vw;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: h3;
+            animation-name: h3;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h3 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    to {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes h3 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    to {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 h2 {
+    color: white;
+    font-size: 4vw;
+    letter-spacing: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: h2;
+            animation-name: h2;
+    -webkit-animation-duration: 0.25s;
+            animation-duration: 0.25s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h2 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes h2 {
+    from {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 p {
+    color: white;
+    font-size: 1vw;
+    letter-spacing: 4px;
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: p;
+            animation-name: p;
+    -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes p {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 28%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes p {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 28%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 1vw;
+    letter-spacing: 3px;
+    position: absolute;
+    bottom: 13%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    background-color: #ffc851;
+    padding: 10px 15px;
+    font-weight: 400;
+    border: 2px solid #ffc851;
+    transition: 0.5s ease;
+    -webkit-animation-name: a;
+            animation-name: a;
+    -webkit-animation-duration: 0.9s;
+            animation-duration: 0.9s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes a {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 49%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 13%;
+      left: 49%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes a {
+    from {
+      position: absolute;
+      bottom: -50%;
+      left: 49%;
+      transform: translate(-50%, 0);
+    }
+    to {
+      position: absolute;
+      bottom: 13%;
+      left: 49%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  div.slide-show div.no-2 a:hover {
+    border: 2px solid #ffc851;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffc851;
+  }
+  div.slide-show div.no-3 {
+    background-image: url(img/slide_1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  div.slide-show div.no-3 div.details {
+    width: 35% !important;
+    position: relative;
+    text-align: center !important;
+  }
+  div.slide-show div.no-3 div.details h2 {
+    color: white;
+    letter-spacing: 12px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    -webkit-animation-name: h2-2;
+            animation-name: h2-2;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h2-2 {
+    from {
+      position: absolute;
+      top: 30%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+    }
+  }
+  @keyframes h2-2 {
+    from {
+      position: absolute;
+      top: 30%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.details h3 {
+    color: white;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateY(-50%, -50%);
+    font-size: 2vw;
+    -webkit-animation-name: h3-2;
+            animation-name: h3-2;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes h3-2 {
+    from {
+      position: absolute;
+      top: 45%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+    }
+  }
+  @keyframes h3-2 {
+    from {
+      position: absolute;
+      top: 45%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.details P {
+    color: white;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1vw;
+    -webkit-animation-name: p-2;
+            animation-name: p-2;
+    -webkit-animation-duration: 0.7s;
+            animation-duration: 0.7s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes p-2 {
+    from {
+      position: absolute;
+      top: 60%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+    }
+  }
+  @keyframes p-2 {
+    from {
+      position: absolute;
+      top: 60%;
+      left: -50%;
+    }
+    to {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.details div.link-pizza {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: link-pizza;
+            animation-name: link-pizza;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #order {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 1vw;
+    padding: 10px 15px;
+    border: 2px solid white;
+    transition: 0.5s ease;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #order:hover {
+    border-color: #ffc851;
+    color: #ffc851;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #view {
+    color: black;
+    margin-left: 15px;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 1vw;
+    padding: 10px 15px;
+    background-color: #ffc851;
+    border: 2px solid #ffc851;
+    transition: 0.5s ease;
+  }
+  div.slide-show div.no-3 div.details div.link-pizza #view:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffc851;
+  }
+  @-webkit-keyframes link-pizza {
+    from {
+      position: absolute;
+      bottom: -20%;
+      left: 50%;
+    }
+    to {
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+    }
+  }
+  @keyframes link-pizza {
+    from {
+      position: absolute;
+      bottom: -20%;
+      left: 50%;
+    }
+    to {
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+    }
+  }
+  div.slide-show div.no-3 div.pizza {
+    position: relative;
+    width: 55%;
+  }
+  div.slide-show div.no-3 div.pizza img {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-animation-name: pizza-2;
+            animation-name: pizza-2;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes pizza-2 {
+    from {
+      position: absolute;
+      top: 50%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  @keyframes pizza-2 {
+    from {
+      position: absolute;
+      top: 50%;
+      right: -50%;
+    }
+    to {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  div.slide-show div.my-slide {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+div.icons {
+  background-image: url(img/back_2.webp);
+  background-attachment: fixed;
+  width: 100%;
+  padding: 10px;
+}
+div.icons div.card-icons {
+  height: 400px !important;
+  width: 29%;
+}
+@media screen and (min-width: 300px) {
+  div.icons div.card-icons {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.icons div.card-icons {
+    width: 29%;
+  }
+}
+div.icons div.card-icons img {
+  width: 120px;
+  height: 120px;
+}
+div.icons div.card-icons h3 {
+  letter-spacing: 3px;
+}
+div.icons div.card-icons p {
+  color: rgba(18, 22, 24, 0.4);
+}
+
+@media screen and (min-width: 300px) {
+  div.hot-sale {
+    background-color: #121618 !important;
+    background-attachment: fixed;
+    padding: 20px;
+    overflow: hidden;
+  }
+  div.hot-sale h2 {
+    color: white;
+    padding: 20px 15px;
+    letter-spacing: 8px;
+    margin: 20px 0;
+  }
+  div.hot-sale div.hot-sale-sides {
+    width: 100% !important;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left {
+    width: 90%;
+    padding: 20px;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card h3 {
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+    letter-spacing: 4px;
+    margin-top: 15px;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card p {
+    font-size: 16px;
+    width: 90%;
+    margin: auto;
+    color: white;
+    padding: 15px 0;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card span {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right {
+    width: 90%;
+    padding: 20px;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card h3 {
+    color: white;
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+    padding: 15px 0;
+    letter-spacing: 4px;
+    margin-top: 15px;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card p {
+    font-size: 16px;
+    width: 90%;
+    margin: auto;
+    color: white;
+    padding: 15px 0;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card span {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 567px) {
+  div.hot-sale {
+    background-color: #121618 !important;
+    background-attachment: fixed;
+    padding: 20px;
+  }
+  div.hot-sale h2 {
+    color: white;
+    padding: 20px 15px;
+    letter-spacing: 8px;
+    margin: 20px 0;
+  }
+  div.hot-sale div.hot-sale-sides {
+    width: 100% !important;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left {
+    width: 90%;
+    padding: 20px;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card {
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card h3 {
+    color: white;
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    padding: 15px 0;
+    letter-spacing: 4px;
+    margin-top: 15px;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card p {
+    font: size 16px;
+    color: white;
+    padding: 15px 0;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card span {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right {
+    width: 90%;
+    padding: 20px;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card {
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card h3 {
+    color: white;
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    padding: 15px 0;
+    letter-spacing: 4px;
+    margin-top: 15px;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card p {
+    font-size: 16px;
+    color: white;
+    padding: 15px 0;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card span {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.hot-sale {
+    background-color: #121618 !important;
+    background-attachment: fixed;
+    padding: 20px;
+  }
+  div.hot-sale h2 {
+    color: white;
+    padding: 20px 15px;
+    letter-spacing: 8px;
+    margin: 20px 0;
+  }
+  div.hot-sale div.hot-sale-sides {
+    width: 100% !important;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left {
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card {
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card h3 {
+    color: white;
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    padding: 15px 0;
+    letter-spacing: 4px;
+    margin-top: 15px;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card p {
+    font-size: 16px;
+    color: white;
+    padding: 15px 0;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card span {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right {
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card {
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card h3 {
+    color: white;
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    padding: 15px 0;
+    letter-spacing: 4px;
+    margin-top: 15px;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card p {
+    font-size: 16px;
+    color: white;
+    padding: 15px 0;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card span {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 999px) {
+  div.hot-sale {
+    background-color: #121618 !important;
+    background-attachment: fixed;
+    padding: 20px;
+  }
+  div.hot-sale h2 {
+    color: white;
+    padding: 20px 15px;
+    letter-spacing: 8px;
+    margin: 20px 0;
+  }
+  div.hot-sale div.hot-sale-sides {
+    width: 100% !important;
+    overflow: hidden;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left {
+    width: 43%;
+    padding: 20px;
+    margin: 0;
+    position: relative;
+    left: -100%;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card {
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card h3 {
+    color: white;
+    font-size: 20px;
+    padding: 15px 0;
+    letter-spacing: 4px;
+    margin-top: 15px;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card p {
+    font-size: 16px;
+    color: white;
+    padding: 15px 0;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card span {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  div.hot-sale div.hot-sale-sides div.left-anime {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: left-side;
+            animation-name: left-side;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes left-side {
+    from {
+      position: relative;
+      left: -100%;
+      top: 0;
+    }
+    to {
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+  }
+  @keyframes left-side {
+    from {
+      position: relative;
+      left: -100%;
+      top: 0;
+    }
+    to {
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right {
+    width: 43%;
+    padding: 20px;
+    margin: 0;
+    position: relative;
+    right: -100%;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card {
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card h3 {
+    color: white;
+    font-size: 20px;
+    padding: 15px 0;
+    letter-spacing: 4px;
+    margin-top: 15px;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card p {
+    font-size: 16px;
+    color: white;
+    padding: 15px 0;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card span {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  div.hot-sale div.hot-sale-sides div.right-anime {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: right-side;
+            animation-name: right-side;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes right-side {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes right-side {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.hot-sale {
+    background-color: #121618 !important;
+    background-attachment: fixed;
+    padding: 20px;
+  }
+  div.hot-sale h2 {
+    color: white;
+    padding: 20px 15px;
+    letter-spacing: 8px;
+    margin: 20px 0;
+    font-family: "PT Sans Narrow";
+  }
+  div.hot-sale div.hot-sale-sides {
+    width: 100% !important;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left {
+    width: 50%;
+    padding: 20px;
+    position: relative;
+    left: -100%;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card {
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card h3 {
+    color: white;
+    font-size: 20px;
+    padding: 15px 0;
+    letter-spacing: 4px;
+    margin-top: 15px;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card p {
+    font-size: 16px;
+    color: white;
+    padding: 15px 0;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-left div.hot-sale-card span {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  div.hot-sale div.hot-sale-sides div.left-anime {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: left-side;
+            animation-name: left-side;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes left-side {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes left-side {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right {
+    width: 50%;
+    padding: 20px;
+    position: relative;
+    right: -100%;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card {
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card h3 {
+    color: white;
+    font-size: 20px;
+    padding: 15px 0;
+    letter-spacing: 4px;
+    margin-top: 15px;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card p {
+    font-size: 16px;
+    color: white;
+    padding: 15px 0;
+  }
+  div.hot-sale div.hot-sale-sides div.hot-sale-right div.hot-sale-card span {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  div.hot-sale div.hot-sale-sides div.right-anime {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: right-side;
+            animation-name: right-side;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes right-side {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes right-side {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+}
+@media screen and (min-width: 300px) {
+  div.legend {
+    background-image: url(img/back_1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+  }
+  div.legend div.left {
+    overflow: hidden;
+  }
+  div.legend div.left h2 {
+    font-size: 26px;
+    width: 100%;
+    margin-bottom: 40px;
+    letter-spacing: 6px;
+    position: relative;
+    left: 0;
+  }
+  div.legend div.left p.bold-p {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+    opacity: 90%;
+    position: relative;
+    left: 0;
+    text-align: justify;
+  }
+  div.legend div.left hr {
+    width: 40%;
+    font-weight: 900;
+    margin-bottom: 40px;
+  }
+  div.legend div.left p.not-bold {
+    font-size: 18px;
+    opacity: 70%;
+    position: relative;
+    left: 0;
+    text-align: justify;
+  }
+  div.legend div.right p.adam-desc {
+    opacity: 70%;
+    font-size: 18px;
+    padding: 20px;
+    border: 2px solid black;
+    position: relative;
+    right: 0;
+    text-align: justify;
+  }
+  div.legend div.right img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    right: 0;
+  }
+  div.legend div.right div.desc {
+    margin-left: 20px;
+    position: relative;
+    right: 0;
+  }
+  div.legend div.right div.desc p {
+    margin: 0;
+    font-size: 14px;
+  }
+  div.legend div.right p.samantha-desc {
+    opacity: 70%;
+    font-size: 18px;
+    padding: 20px;
+    border: 2px solid black;
+    position: relative;
+    right: 0;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 567px) {
+  div.legend {
+    background-image: url(img/back_1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+  }
+  div.legend div.left {
+    overflow: hidden;
+  }
+  div.legend div.left h2 {
+    font-size: 26px;
+    width: 100%;
+    margin-bottom: 40px;
+    letter-spacing: 6px;
+    position: relative;
+    left: 0;
+  }
+  div.legend div.left p.bold-p {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+    opacity: 90%;
+    position: relative;
+    left: 0;
+  }
+  div.legend div.left hr {
+    width: 40%;
+    font-weight: 900;
+    margin-bottom: 40px;
+  }
+  div.legend div.left p.not-bold {
+    font-size: 18px;
+    opacity: 70%;
+    position: relative;
+    left: 0;
+  }
+  div.legend div.right p.adam-desc {
+    opacity: 70%;
+    font-size: 18px;
+    padding: 20px;
+    border: 2px solid black;
+    position: relative;
+    right: 0;
+  }
+  div.legend div.right img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    right: 0;
+  }
+  div.legend div.right div.desc {
+    margin-left: 20px;
+    position: relative;
+    right: 0;
+  }
+  div.legend div.right div.desc p {
+    margin: 0;
+    font-size: 14px;
+  }
+  div.legend div.right p.samantha-desc {
+    opacity: 70%;
+    font-size: 18px;
+    padding: 20px;
+    border: 2px solid black;
+    position: relative;
+    right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.legend {
+    background-image: url(img/back_1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+  }
+  div.legend div.left {
+    overflow: hidden;
+  }
+  div.legend div.left h2 {
+    font-size: 26px;
+    width: 100%;
+    margin-bottom: 40px;
+    letter-spacing: 6px;
+    position: relative;
+    left: 0;
+  }
+  div.legend div.left p.bold-p {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+    opacity: 90%;
+    position: relative;
+    left: 0;
+  }
+  div.legend div.left hr {
+    width: 40%;
+    font-weight: 900;
+    margin-bottom: 40px;
+  }
+  div.legend div.left p.not-bold {
+    font-size: 18px;
+    opacity: 70%;
+    position: relative;
+    left: 0;
+  }
+  div.legend div.right p.adam-desc {
+    opacity: 70%;
+    font-size: 18px;
+    padding: 20px;
+    border: 2px solid black;
+    position: relative;
+    right: 0;
+  }
+  div.legend div.right img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    right: 0;
+  }
+  div.legend div.right div.desc {
+    margin-left: 20px;
+    position: relative;
+    right: 0;
+  }
+  div.legend div.right div.desc p {
+    margin: 0;
+    font-size: 14px;
+  }
+  div.legend div.right p.samantha-desc {
+    opacity: 70%;
+    font-size: 18px;
+    padding: 20px;
+    border: 2px solid black;
+    position: relative;
+    right: 0;
+  }
+}
+@media screen and (min-width: 999px) {
+  div.legend {
+    background-image: url(img/back_1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+  }
+  div.legend div.left {
+    overflow: hidden;
+  }
+  div.legend div.left h2 {
+    font-size: 26px;
+    width: 100%;
+    margin-bottom: 40px;
+    letter-spacing: 6px;
+    position: relative;
+    left: -150%;
+  }
+  div.legend div.left p.bold-p {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+    opacity: 90%;
+    position: relative;
+    left: -150%;
+  }
+  div.legend div.left hr {
+    width: 40%;
+    font-weight: 900;
+    margin-bottom: 40px;
+  }
+  div.legend div.left p.not-bold {
+    font-size: 18px;
+    opacity: 70%;
+    position: relative;
+    left: -150%;
+  }
+  div.legend div.left-anime h2 {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: legend;
+            animation-name: legend;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes legend {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes legend {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.legend div.left-anime p.bold-p {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: legend-p;
+            animation-name: legend-p;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes legend-p {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes legend-p {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.legend div.left-anime p.not-bold {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: legend-p-not-bold;
+            animation-name: legend-p-not-bold;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes legend-p-not-bold {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes legend-p-not-bold {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.legend div.right p.adam-desc {
+    opacity: 70%;
+    font-size: 18px;
+    padding: 20px;
+    border: 2px solid black;
+    position: relative;
+    right: -150%;
+  }
+  div.legend div.right img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    right: -150%;
+  }
+  div.legend div.right div.desc {
+    margin-left: 20px;
+    position: relative;
+    right: -150%;
+  }
+  div.legend div.right div.desc p {
+    margin: 0;
+    font-size: 14px;
+  }
+  div.legend div.right p.samantha-desc {
+    opacity: 70%;
+    font-size: 18px;
+    padding: 20px;
+    border: 2px solid black;
+    position: relative;
+    right: -150%;
+  }
+  div.legend div.right-anime p.adam-desc {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: right-anime-p;
+            animation-name: right-anime-p;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes right-anime-p {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes right-anime-p {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.legend div.right-anime img {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: right-anime-img;
+            animation-name: right-anime-img;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes right-anime-img {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes right-anime-img {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.legend div.right-anime div.desc {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: right-anime-desc;
+            animation-name: right-anime-desc;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes right-anime-desc {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes right-anime-desc {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.legend div.right-anime p.samantha-desc {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: right-anime-p;
+            animation-name: right-anime-p;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @keyframes right-anime-p {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.legend {
+    background-image: url(img/back_1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+  }
+  div.legend div.left {
+    overflow: hidden;
+  }
+  div.legend div.left h2 {
+    font-size: 26px;
+    width: 100%;
+    margin-bottom: 40px;
+    letter-spacing: 6px;
+    position: relative;
+    left: -150%;
+  }
+  div.legend div.left p.bold-p {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+    opacity: 90%;
+    position: relative;
+    left: -150%;
+  }
+  div.legend div.left hr {
+    width: 40%;
+    font-weight: 900;
+    margin-bottom: 40px;
+  }
+  div.legend div.left p.not-bold {
+    font-size: 18px;
+    opacity: 70%;
+    position: relative;
+    left: -150%;
+  }
+  div.legend div.left-anime h2 {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: legend;
+            animation-name: legend;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes legend {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes legend {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.legend div.left-anime p.bold-p {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: legend-p;
+            animation-name: legend-p;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes legend-p {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes legend-p {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.legend div.left-anime p.not-bold {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: legend-p-not-bold;
+            animation-name: legend-p-not-bold;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes legend-p-not-bold {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes legend-p-not-bold {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.legend div.right p.adam-desc {
+    opacity: 70%;
+    font-size: 18px;
+    padding: 20px;
+    border: 2px solid black;
+    position: relative;
+    right: -150%;
+  }
+  div.legend div.right img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    right: -150%;
+  }
+  div.legend div.right div.desc {
+    margin-left: 20px;
+    position: relative;
+    right: -150%;
+  }
+  div.legend div.right div.desc p {
+    margin: 0;
+    font-size: 14px;
+  }
+  div.legend div.right p.samantha-desc {
+    opacity: 70%;
+    font-size: 18px;
+    padding: 20px;
+    border: 2px solid black;
+    position: relative;
+    right: -150%;
+  }
+  div.legend div.right-anime p.adam-desc {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: right-anime-p;
+            animation-name: right-anime-p;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes right-anime-p {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes right-anime-p {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.legend div.right-anime img {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: right-anime-img;
+            animation-name: right-anime-img;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes right-anime-img {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes right-anime-img {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.legend div.right-anime div.desc {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: right-anime-desc;
+            animation-name: right-anime-desc;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes right-anime-desc {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes right-anime-desc {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.legend div.right-anime p.samantha-desc {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: right-anime-p;
+            animation-name: right-anime-p;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @keyframes right-anime-p {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+}
+@media screen and (min-width: 300px) {
+  div.discover {
+    background-color: #121618;
+    width: 100%;
+    overflow: hidden;
+  }
+  div.discover h2 {
+    color: white;
+    font-size: 26px;
+    letter-spacing: 7px;
+  }
+  div.discover div.discover-links > a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  div.discover div.discover-links > a:hover {
+    color: #ffc851;
+  }
+  div.discover div.discover-links > a.active {
+    color: #ffc851;
+  }
+  div.discover div.discover-menu, div.discover div.discover-burger, div.discover div.discover-dessert, div.discover div.discover-drink, div.discover div.discover-pasta, div.discover div.discover-salad {
+    overflow: hidden;
+    width: 100%;
+  }
+  div.discover div.discover-menu div.discover-card, div.discover div.discover-burger div.discover-card, div.discover div.discover-dessert div.discover-card, div.discover div.discover-drink div.discover-card, div.discover div.discover-pasta div.discover-card, div.discover div.discover-salad div.discover-card {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  div.discover div.discover-menu div.discover-card div.img, div.discover div.discover-burger div.discover-card div.img, div.discover div.discover-dessert div.discover-card div.img, div.discover div.discover-drink div.discover-card div.img, div.discover div.discover-pasta div.discover-card div.img, div.discover div.discover-salad div.discover-card div.img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+  }
+  div.discover div.discover-menu div.discover-card div.img img.img-pizza, div.discover div.discover-burger div.discover-card div.img img.img-pizza, div.discover div.discover-dessert div.discover-card div.img img.img-pizza, div.discover div.discover-drink div.discover-card div.img img.img-pizza, div.discover div.discover-pasta div.discover-card div.img img.img-pizza, div.discover div.discover-salad div.discover-card div.img img.img-pizza {
+    width: 100%;
+  }
+  div.discover div.discover-menu div.discover-card div.img div.img-shop, div.discover div.discover-burger div.discover-card div.img div.img-shop, div.discover div.discover-dessert div.discover-card div.img div.img-shop, div.discover div.discover-drink div.discover-card div.img div.img-shop, div.discover div.discover-pasta div.discover-card div.img div.img-shop, div.discover div.discover-salad div.discover-card div.img div.img-shop {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    border-radius: 50%;
+    background-color: rgba(255, 200, 81, 0.5);
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  div.discover div.discover-menu div.discover-card div.img div.img-shop a, div.discover div.discover-burger div.discover-card div.img div.img-shop a, div.discover div.discover-dessert div.discover-card div.img div.img-shop a, div.discover div.discover-drink div.discover-card div.img div.img-shop a, div.discover div.discover-pasta div.discover-card div.img div.img-shop a, div.discover div.discover-salad div.discover-card div.img div.img-shop a {
+    text-decoration: none;
+    width: 100%;
+  }
+  div.discover div.discover-menu div.discover-card div.img div.img-shop a img, div.discover div.discover-burger div.discover-card div.img div.img-shop a img, div.discover div.discover-dessert div.discover-card div.img div.img-shop a img, div.discover div.discover-drink div.discover-card div.img div.img-shop a img, div.discover div.discover-pasta div.discover-card div.img div.img-shop a img, div.discover div.discover-salad div.discover-card div.img div.img-shop a img {
+    width: 25%;
+    opacity: 100%;
+  }
+  div.discover div.discover-menu div.discover-card h3, div.discover div.discover-burger div.discover-card h3, div.discover div.discover-dessert div.discover-card h3, div.discover div.discover-drink div.discover-card h3, div.discover div.discover-pasta div.discover-card h3, div.discover div.discover-salad div.discover-card h3 {
+    padding: 20px 15px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 10px;
+  }
+  div.discover div.discover-menu div.discover-card p, div.discover div.discover-burger div.discover-card p, div.discover div.discover-dessert div.discover-card p, div.discover div.discover-drink div.discover-card p, div.discover div.discover-pasta div.discover-card p, div.discover div.discover-salad div.discover-card p {
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+  }
+  div.discover div.discover-menu div.discover-card span, div.discover div.discover-burger div.discover-card span, div.discover div.discover-dessert div.discover-card span, div.discover div.discover-drink div.discover-card span, div.discover div.discover-pasta div.discover-card span, div.discover div.discover-salad div.discover-card span {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "lato";
+    letter-spacing: 3px;
+  }
+  div.discover div.discover-menu div.discover-card:hover div.img div.img-shop, div.discover div.discover-burger div.discover-card:hover div.img div.img-shop, div.discover div.discover-dessert div.discover-card:hover div.img div.img-shop, div.discover div.discover-drink div.discover-card:hover div.img div.img-shop, div.discover div.discover-pasta div.discover-card:hover div.img div.img-shop, div.discover div.discover-salad div.discover-card:hover div.img div.img-shop {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  div.discover div.discover-menu div.discover-card:hover, div.discover div.discover-burger div.discover-card:hover, div.discover div.discover-dessert div.discover-card:hover, div.discover div.discover-drink div.discover-card:hover, div.discover div.discover-pasta div.discover-card:hover, div.discover div.discover-salad div.discover-card:hover {
+    transform: scale(1.1);
+  }
+  div.discover div.discover-menu div.no-1, div.discover div.discover-menu div.no-2, div.discover div.discover-menu div.no-5, div.discover div.discover-menu div.no-6, div.discover div.discover-burger div.no-1, div.discover div.discover-burger div.no-2, div.discover div.discover-burger div.no-5, div.discover div.discover-burger div.no-6, div.discover div.discover-dessert div.no-1, div.discover div.discover-dessert div.no-2, div.discover div.discover-dessert div.no-5, div.discover div.discover-dessert div.no-6, div.discover div.discover-drink div.no-1, div.discover div.discover-drink div.no-2, div.discover div.discover-drink div.no-5, div.discover div.discover-drink div.no-6, div.discover div.discover-pasta div.no-1, div.discover div.discover-pasta div.no-2, div.discover div.discover-pasta div.no-5, div.discover div.discover-pasta div.no-6, div.discover div.discover-salad div.no-1, div.discover div.discover-salad div.no-2, div.discover div.discover-salad div.no-5, div.discover div.discover-salad div.no-6 {
+    position: relative;
+    left: 0;
+  }
+  div.discover div.discover-menu div.no-3, div.discover div.discover-menu div.no-4, div.discover div.discover-menu div.no-7, div.discover div.discover-menu div.no-8, div.discover div.discover-burger div.no-3, div.discover div.discover-burger div.no-4, div.discover div.discover-burger div.no-7, div.discover div.discover-burger div.no-8, div.discover div.discover-dessert div.no-3, div.discover div.discover-dessert div.no-4, div.discover div.discover-dessert div.no-7, div.discover div.discover-dessert div.no-8, div.discover div.discover-drink div.no-3, div.discover div.discover-drink div.no-4, div.discover div.discover-drink div.no-7, div.discover div.discover-drink div.no-8, div.discover div.discover-pasta div.no-3, div.discover div.discover-pasta div.no-4, div.discover div.discover-pasta div.no-7, div.discover div.discover-pasta div.no-8, div.discover div.discover-salad div.no-3, div.discover div.discover-salad div.no-4, div.discover div.discover-salad div.no-7, div.discover div.discover-salad div.no-8 {
+    position: relative;
+    right: 0;
+  }
+}
+@media screen and (min-width: 567px) {
+  div.discover {
+    background-color: #121618;
+    width: 100%;
+    overflow: hidden;
+  }
+  div.discover h2 {
+    color: white;
+    font-size: 26px;
+    letter-spacing: 7px;
+  }
+  div.discover div.discover-links > a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  div.discover div.discover-links > a:hover {
+    color: #ffc851;
+  }
+  div.discover div.discover-links > a.active {
+    color: #ffc851;
+  }
+  div.discover div.discover-menu, div.discover div.discover-burger, div.discover div.discover-dessert, div.discover div.discover-drink, div.discover div.discover-pasta, div.discover div.discover-salad {
+    overflow: hidden;
+    width: 100%;
+  }
+  div.discover div.discover-menu div.discover-card, div.discover div.discover-burger div.discover-card, div.discover div.discover-dessert div.discover-card, div.discover div.discover-drink div.discover-card, div.discover div.discover-pasta div.discover-card, div.discover div.discover-salad div.discover-card {
+    width: 50%;
+    padding: 20px;
+    color: white;
+    transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  div.discover div.discover-menu div.discover-card div.img, div.discover div.discover-burger div.discover-card div.img, div.discover div.discover-dessert div.discover-card div.img, div.discover div.discover-drink div.discover-card div.img, div.discover div.discover-pasta div.discover-card div.img, div.discover div.discover-salad div.discover-card div.img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+  }
+  div.discover div.discover-menu div.discover-card div.img img.img-pizza, div.discover div.discover-burger div.discover-card div.img img.img-pizza, div.discover div.discover-dessert div.discover-card div.img img.img-pizza, div.discover div.discover-drink div.discover-card div.img img.img-pizza, div.discover div.discover-pasta div.discover-card div.img img.img-pizza, div.discover div.discover-salad div.discover-card div.img img.img-pizza {
+    width: 100%;
+  }
+  div.discover div.discover-menu div.discover-card div.img div.img-shop, div.discover div.discover-burger div.discover-card div.img div.img-shop, div.discover div.discover-dessert div.discover-card div.img div.img-shop, div.discover div.discover-drink div.discover-card div.img div.img-shop, div.discover div.discover-pasta div.discover-card div.img div.img-shop, div.discover div.discover-salad div.discover-card div.img div.img-shop {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    border-radius: 50%;
+    background-color: rgba(255, 200, 81, 0.5);
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  div.discover div.discover-menu div.discover-card div.img div.img-shop a, div.discover div.discover-burger div.discover-card div.img div.img-shop a, div.discover div.discover-dessert div.discover-card div.img div.img-shop a, div.discover div.discover-drink div.discover-card div.img div.img-shop a, div.discover div.discover-pasta div.discover-card div.img div.img-shop a, div.discover div.discover-salad div.discover-card div.img div.img-shop a {
+    text-decoration: none;
+    width: 100%;
+  }
+  div.discover div.discover-menu div.discover-card div.img div.img-shop a img, div.discover div.discover-burger div.discover-card div.img div.img-shop a img, div.discover div.discover-dessert div.discover-card div.img div.img-shop a img, div.discover div.discover-drink div.discover-card div.img div.img-shop a img, div.discover div.discover-pasta div.discover-card div.img div.img-shop a img, div.discover div.discover-salad div.discover-card div.img div.img-shop a img {
+    width: 25%;
+    opacity: 100%;
+  }
+  div.discover div.discover-menu div.discover-card h3, div.discover div.discover-burger div.discover-card h3, div.discover div.discover-dessert div.discover-card h3, div.discover div.discover-drink div.discover-card h3, div.discover div.discover-pasta div.discover-card h3, div.discover div.discover-salad div.discover-card h3 {
+    padding: 20px 15px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 10px;
+  }
+  div.discover div.discover-menu div.discover-card p, div.discover div.discover-burger div.discover-card p, div.discover div.discover-dessert div.discover-card p, div.discover div.discover-drink div.discover-card p, div.discover div.discover-pasta div.discover-card p, div.discover div.discover-salad div.discover-card p {
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+  }
+  div.discover div.discover-menu div.discover-card span, div.discover div.discover-burger div.discover-card span, div.discover div.discover-dessert div.discover-card span, div.discover div.discover-drink div.discover-card span, div.discover div.discover-pasta div.discover-card span, div.discover div.discover-salad div.discover-card span {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "lato";
+    letter-spacing: 3px;
+  }
+  div.discover div.discover-menu div.discover-card:hover div.img div.img-shop, div.discover div.discover-burger div.discover-card:hover div.img div.img-shop, div.discover div.discover-dessert div.discover-card:hover div.img div.img-shop, div.discover div.discover-drink div.discover-card:hover div.img div.img-shop, div.discover div.discover-pasta div.discover-card:hover div.img div.img-shop, div.discover div.discover-salad div.discover-card:hover div.img div.img-shop {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  div.discover div.discover-menu div.discover-card:hover, div.discover div.discover-burger div.discover-card:hover, div.discover div.discover-dessert div.discover-card:hover, div.discover div.discover-drink div.discover-card:hover, div.discover div.discover-pasta div.discover-card:hover, div.discover div.discover-salad div.discover-card:hover {
+    transform: scale(1.1);
+  }
+  div.discover div.discover-menu div.no-1, div.discover div.discover-menu div.no-2, div.discover div.discover-menu div.no-5, div.discover div.discover-menu div.no-6, div.discover div.discover-burger div.no-1, div.discover div.discover-burger div.no-2, div.discover div.discover-burger div.no-5, div.discover div.discover-burger div.no-6, div.discover div.discover-dessert div.no-1, div.discover div.discover-dessert div.no-2, div.discover div.discover-dessert div.no-5, div.discover div.discover-dessert div.no-6, div.discover div.discover-drink div.no-1, div.discover div.discover-drink div.no-2, div.discover div.discover-drink div.no-5, div.discover div.discover-drink div.no-6, div.discover div.discover-pasta div.no-1, div.discover div.discover-pasta div.no-2, div.discover div.discover-pasta div.no-5, div.discover div.discover-pasta div.no-6, div.discover div.discover-salad div.no-1, div.discover div.discover-salad div.no-2, div.discover div.discover-salad div.no-5, div.discover div.discover-salad div.no-6 {
+    position: relative;
+    left: 0;
+  }
+  div.discover div.discover-menu div.no-3, div.discover div.discover-menu div.no-4, div.discover div.discover-menu div.no-7, div.discover div.discover-menu div.no-8, div.discover div.discover-burger div.no-3, div.discover div.discover-burger div.no-4, div.discover div.discover-burger div.no-7, div.discover div.discover-burger div.no-8, div.discover div.discover-dessert div.no-3, div.discover div.discover-dessert div.no-4, div.discover div.discover-dessert div.no-7, div.discover div.discover-dessert div.no-8, div.discover div.discover-drink div.no-3, div.discover div.discover-drink div.no-4, div.discover div.discover-drink div.no-7, div.discover div.discover-drink div.no-8, div.discover div.discover-pasta div.no-3, div.discover div.discover-pasta div.no-4, div.discover div.discover-pasta div.no-7, div.discover div.discover-pasta div.no-8, div.discover div.discover-salad div.no-3, div.discover div.discover-salad div.no-4, div.discover div.discover-salad div.no-7, div.discover div.discover-salad div.no-8 {
+    position: relative;
+    right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.discover {
+    background-color: #121618;
+    width: 100%;
+    overflow: hidden;
+  }
+  div.discover h2 {
+    color: white;
+    font-size: 26px;
+    letter-spacing: 7px;
+  }
+  div.discover div.discover-links > a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  div.discover div.discover-links > a:hover {
+    color: #ffc851;
+  }
+  div.discover div.discover-links > a.active {
+    color: #ffc851;
+  }
+  div.discover div.discover-menu, div.discover div.discover-burger, div.discover div.discover-dessert, div.discover div.discover-drink, div.discover div.discover-pasta, div.discover div.discover-salad {
+    overflow: hidden;
+    width: 100%;
+  }
+  div.discover div.discover-menu div.discover-card, div.discover div.discover-burger div.discover-card, div.discover div.discover-dessert div.discover-card, div.discover div.discover-drink div.discover-card, div.discover div.discover-pasta div.discover-card, div.discover div.discover-salad div.discover-card {
+    width: 50%;
+    padding: 20px;
+    color: white;
+    transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  div.discover div.discover-menu div.discover-card div.img, div.discover div.discover-burger div.discover-card div.img, div.discover div.discover-dessert div.discover-card div.img, div.discover div.discover-drink div.discover-card div.img, div.discover div.discover-pasta div.discover-card div.img, div.discover div.discover-salad div.discover-card div.img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+  }
+  div.discover div.discover-menu div.discover-card div.img img.img-pizza, div.discover div.discover-burger div.discover-card div.img img.img-pizza, div.discover div.discover-dessert div.discover-card div.img img.img-pizza, div.discover div.discover-drink div.discover-card div.img img.img-pizza, div.discover div.discover-pasta div.discover-card div.img img.img-pizza, div.discover div.discover-salad div.discover-card div.img img.img-pizza {
+    width: 100%;
+  }
+  div.discover div.discover-menu div.discover-card div.img div.img-shop, div.discover div.discover-burger div.discover-card div.img div.img-shop, div.discover div.discover-dessert div.discover-card div.img div.img-shop, div.discover div.discover-drink div.discover-card div.img div.img-shop, div.discover div.discover-pasta div.discover-card div.img div.img-shop, div.discover div.discover-salad div.discover-card div.img div.img-shop {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    border-radius: 50%;
+    background-color: rgba(255, 200, 81, 0.5);
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  div.discover div.discover-menu div.discover-card div.img div.img-shop a, div.discover div.discover-burger div.discover-card div.img div.img-shop a, div.discover div.discover-dessert div.discover-card div.img div.img-shop a, div.discover div.discover-drink div.discover-card div.img div.img-shop a, div.discover div.discover-pasta div.discover-card div.img div.img-shop a, div.discover div.discover-salad div.discover-card div.img div.img-shop a {
+    text-decoration: none;
+    width: 100%;
+  }
+  div.discover div.discover-menu div.discover-card div.img div.img-shop a img, div.discover div.discover-burger div.discover-card div.img div.img-shop a img, div.discover div.discover-dessert div.discover-card div.img div.img-shop a img, div.discover div.discover-drink div.discover-card div.img div.img-shop a img, div.discover div.discover-pasta div.discover-card div.img div.img-shop a img, div.discover div.discover-salad div.discover-card div.img div.img-shop a img {
+    width: 25%;
+    opacity: 100%;
+  }
+  div.discover div.discover-menu div.discover-card h3, div.discover div.discover-burger div.discover-card h3, div.discover div.discover-dessert div.discover-card h3, div.discover div.discover-drink div.discover-card h3, div.discover div.discover-pasta div.discover-card h3, div.discover div.discover-salad div.discover-card h3 {
+    padding: 20px 15px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 10px;
+  }
+  div.discover div.discover-menu div.discover-card p, div.discover div.discover-burger div.discover-card p, div.discover div.discover-dessert div.discover-card p, div.discover div.discover-drink div.discover-card p, div.discover div.discover-pasta div.discover-card p, div.discover div.discover-salad div.discover-card p {
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+  }
+  div.discover div.discover-menu div.discover-card span, div.discover div.discover-burger div.discover-card span, div.discover div.discover-dessert div.discover-card span, div.discover div.discover-drink div.discover-card span, div.discover div.discover-pasta div.discover-card span, div.discover div.discover-salad div.discover-card span {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "lato";
+    letter-spacing: 3px;
+  }
+  div.discover div.discover-menu div.discover-card:hover div.img div.img-shop, div.discover div.discover-burger div.discover-card:hover div.img div.img-shop, div.discover div.discover-dessert div.discover-card:hover div.img div.img-shop, div.discover div.discover-drink div.discover-card:hover div.img div.img-shop, div.discover div.discover-pasta div.discover-card:hover div.img div.img-shop, div.discover div.discover-salad div.discover-card:hover div.img div.img-shop {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  div.discover div.discover-menu div.discover-card:hover, div.discover div.discover-burger div.discover-card:hover, div.discover div.discover-dessert div.discover-card:hover, div.discover div.discover-drink div.discover-card:hover, div.discover div.discover-pasta div.discover-card:hover, div.discover div.discover-salad div.discover-card:hover {
+    transform: scale(1.1);
+  }
+  div.discover div.discover-menu div.no-1, div.discover div.discover-menu div.no-2, div.discover div.discover-menu div.no-5, div.discover div.discover-menu div.no-6, div.discover div.discover-burger div.no-1, div.discover div.discover-burger div.no-2, div.discover div.discover-burger div.no-5, div.discover div.discover-burger div.no-6, div.discover div.discover-dessert div.no-1, div.discover div.discover-dessert div.no-2, div.discover div.discover-dessert div.no-5, div.discover div.discover-dessert div.no-6, div.discover div.discover-drink div.no-1, div.discover div.discover-drink div.no-2, div.discover div.discover-drink div.no-5, div.discover div.discover-drink div.no-6, div.discover div.discover-pasta div.no-1, div.discover div.discover-pasta div.no-2, div.discover div.discover-pasta div.no-5, div.discover div.discover-pasta div.no-6, div.discover div.discover-salad div.no-1, div.discover div.discover-salad div.no-2, div.discover div.discover-salad div.no-5, div.discover div.discover-salad div.no-6 {
+    position: relative;
+    left: 0;
+  }
+  div.discover div.discover-menu div.no-3, div.discover div.discover-menu div.no-4, div.discover div.discover-menu div.no-7, div.discover div.discover-menu div.no-8, div.discover div.discover-burger div.no-3, div.discover div.discover-burger div.no-4, div.discover div.discover-burger div.no-7, div.discover div.discover-burger div.no-8, div.discover div.discover-dessert div.no-3, div.discover div.discover-dessert div.no-4, div.discover div.discover-dessert div.no-7, div.discover div.discover-dessert div.no-8, div.discover div.discover-drink div.no-3, div.discover div.discover-drink div.no-4, div.discover div.discover-drink div.no-7, div.discover div.discover-drink div.no-8, div.discover div.discover-pasta div.no-3, div.discover div.discover-pasta div.no-4, div.discover div.discover-pasta div.no-7, div.discover div.discover-pasta div.no-8, div.discover div.discover-salad div.no-3, div.discover div.discover-salad div.no-4, div.discover div.discover-salad div.no-7, div.discover div.discover-salad div.no-8 {
+    position: relative;
+    right: 0;
+  }
+}
+@media screen and (min-width: 999px) {
+  div.discover {
+    background-color: #121618;
+    width: 100%;
+    overflow: hidden;
+  }
+  div.discover h2 {
+    color: white;
+    font-size: 26px;
+    letter-spacing: 7px;
+  }
+  div.discover div.discover-links > a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  div.discover div.discover-links > a:hover {
+    color: #ffc851;
+  }
+  div.discover div.discover-links > a.active {
+    color: #ffc851;
+  }
+  div.discover div.discover-menu, div.discover div.discover-burger, div.discover div.discover-dessert, div.discover div.discover-drink, div.discover div.discover-pasta, div.discover div.discover-salad {
+    overflow: hidden;
+    width: 100%;
+  }
+  div.discover div.discover-menu div.discover-card, div.discover div.discover-burger div.discover-card, div.discover div.discover-dessert div.discover-card, div.discover div.discover-drink div.discover-card, div.discover div.discover-pasta div.discover-card, div.discover div.discover-salad div.discover-card {
+    width: 25%;
+    padding: 20px;
+    color: white;
+    transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  div.discover div.discover-menu div.discover-card div.img, div.discover div.discover-burger div.discover-card div.img, div.discover div.discover-dessert div.discover-card div.img, div.discover div.discover-drink div.discover-card div.img, div.discover div.discover-pasta div.discover-card div.img, div.discover div.discover-salad div.discover-card div.img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+  }
+  div.discover div.discover-menu div.discover-card div.img img.img-pizza, div.discover div.discover-burger div.discover-card div.img img.img-pizza, div.discover div.discover-dessert div.discover-card div.img img.img-pizza, div.discover div.discover-drink div.discover-card div.img img.img-pizza, div.discover div.discover-pasta div.discover-card div.img img.img-pizza, div.discover div.discover-salad div.discover-card div.img img.img-pizza {
+    width: 100%;
+  }
+  div.discover div.discover-menu div.discover-card div.img div.img-shop, div.discover div.discover-burger div.discover-card div.img div.img-shop, div.discover div.discover-dessert div.discover-card div.img div.img-shop, div.discover div.discover-drink div.discover-card div.img div.img-shop, div.discover div.discover-pasta div.discover-card div.img div.img-shop, div.discover div.discover-salad div.discover-card div.img div.img-shop {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    border-radius: 50%;
+    background-color: rgba(255, 200, 81, 0.5);
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  div.discover div.discover-menu div.discover-card div.img div.img-shop a, div.discover div.discover-burger div.discover-card div.img div.img-shop a, div.discover div.discover-dessert div.discover-card div.img div.img-shop a, div.discover div.discover-drink div.discover-card div.img div.img-shop a, div.discover div.discover-pasta div.discover-card div.img div.img-shop a, div.discover div.discover-salad div.discover-card div.img div.img-shop a {
+    text-decoration: none;
+    width: 100%;
+  }
+  div.discover div.discover-menu div.discover-card div.img div.img-shop a img, div.discover div.discover-burger div.discover-card div.img div.img-shop a img, div.discover div.discover-dessert div.discover-card div.img div.img-shop a img, div.discover div.discover-drink div.discover-card div.img div.img-shop a img, div.discover div.discover-pasta div.discover-card div.img div.img-shop a img, div.discover div.discover-salad div.discover-card div.img div.img-shop a img {
+    width: 25%;
+    opacity: 100%;
+  }
+  div.discover div.discover-menu div.discover-card h3, div.discover div.discover-burger div.discover-card h3, div.discover div.discover-dessert div.discover-card h3, div.discover div.discover-drink div.discover-card h3, div.discover div.discover-pasta div.discover-card h3, div.discover div.discover-salad div.discover-card h3 {
+    padding: 20px 15px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 10px;
+  }
+  div.discover div.discover-menu div.discover-card p, div.discover div.discover-burger div.discover-card p, div.discover div.discover-dessert div.discover-card p, div.discover div.discover-drink div.discover-card p, div.discover div.discover-pasta div.discover-card p, div.discover div.discover-salad div.discover-card p {
+    padding: 5px;
+    font-size: 16px;
+  }
+  div.discover div.discover-menu div.discover-card span, div.discover div.discover-burger div.discover-card span, div.discover div.discover-dessert div.discover-card span, div.discover div.discover-drink div.discover-card span, div.discover div.discover-pasta div.discover-card span, div.discover div.discover-salad div.discover-card span {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "lato";
+    letter-spacing: 3px;
+  }
+  div.discover div.discover-menu div.discover-card:hover div.img div.img-shop, div.discover div.discover-burger div.discover-card:hover div.img div.img-shop, div.discover div.discover-dessert div.discover-card:hover div.img div.img-shop, div.discover div.discover-drink div.discover-card:hover div.img div.img-shop, div.discover div.discover-pasta div.discover-card:hover div.img div.img-shop, div.discover div.discover-salad div.discover-card:hover div.img div.img-shop {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  div.discover div.discover-menu div.discover-card:hover, div.discover div.discover-burger div.discover-card:hover, div.discover div.discover-dessert div.discover-card:hover, div.discover div.discover-drink div.discover-card:hover, div.discover div.discover-pasta div.discover-card:hover, div.discover div.discover-salad div.discover-card:hover {
+    transform: scale(1.1);
+  }
+  div.discover div.discover-menu div.no-1, div.discover div.discover-menu div.no-2, div.discover div.discover-menu div.no-5, div.discover div.discover-menu div.no-6, div.discover div.discover-burger div.no-1, div.discover div.discover-burger div.no-2, div.discover div.discover-burger div.no-5, div.discover div.discover-burger div.no-6, div.discover div.discover-dessert div.no-1, div.discover div.discover-dessert div.no-2, div.discover div.discover-dessert div.no-5, div.discover div.discover-dessert div.no-6, div.discover div.discover-drink div.no-1, div.discover div.discover-drink div.no-2, div.discover div.discover-drink div.no-5, div.discover div.discover-drink div.no-6, div.discover div.discover-pasta div.no-1, div.discover div.discover-pasta div.no-2, div.discover div.discover-pasta div.no-5, div.discover div.discover-pasta div.no-6, div.discover div.discover-salad div.no-1, div.discover div.discover-salad div.no-2, div.discover div.discover-salad div.no-5, div.discover div.discover-salad div.no-6 {
+    position: relative;
+    left: -150%;
+  }
+  div.discover div.discover-menu div.no-3, div.discover div.discover-menu div.no-4, div.discover div.discover-menu div.no-7, div.discover div.discover-menu div.no-8, div.discover div.discover-burger div.no-3, div.discover div.discover-burger div.no-4, div.discover div.discover-burger div.no-7, div.discover div.discover-burger div.no-8, div.discover div.discover-dessert div.no-3, div.discover div.discover-dessert div.no-4, div.discover div.discover-dessert div.no-7, div.discover div.discover-dessert div.no-8, div.discover div.discover-drink div.no-3, div.discover div.discover-drink div.no-4, div.discover div.discover-drink div.no-7, div.discover div.discover-drink div.no-8, div.discover div.discover-pasta div.no-3, div.discover div.discover-pasta div.no-4, div.discover div.discover-pasta div.no-7, div.discover div.discover-pasta div.no-8, div.discover div.discover-salad div.no-3, div.discover div.discover-salad div.no-4, div.discover div.discover-salad div.no-7, div.discover div.discover-salad div.no-8 {
+    position: relative;
+    right: -150%;
+  }
+  div.discover div.discover-anime div.no-1 {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: discover-1;
+            animation-name: discover-1;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes discover-1 {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes discover-1 {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.discover div.discover-anime div.no-2 {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: discover-2;
+            animation-name: discover-2;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes discover-2 {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes discover-2 {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.discover div.discover-anime div.no-3 {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: discover-3;
+            animation-name: discover-3;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1s;
+            animation-iteration-count: 1s;
+  }
+  @-webkit-keyframes discover-3 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes discover-3 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.discover div.discover-anime div.no-4 {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: discover-4;
+            animation-name: discover-4;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes discover-4 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes discover-4 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.discover div.discover-anime-2 div.no-5 {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: discover-5;
+            animation-name: discover-5;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes discover-5 {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes discover-5 {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.discover div.discover-anime-2 div.no-6 {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: discover-6;
+            animation-name: discover-6;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes discover-6 {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes discover-6 {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.discover div.discover-anime-2 div.no-7 {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: discover-7;
+            animation-name: discover-7;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes discover-7 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes discover-7 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.discover div.discover-anime-2 div.no-8 {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: discover-8;
+            animation-name: discover-8;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes discover-8 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes discover-8 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.discover {
+    background-color: #121618;
+    width: 100%;
+    overflow: hidden;
+  }
+  div.discover h2 {
+    color: white;
+    font-size: 26px;
+    letter-spacing: 7px;
+  }
+  div.discover div.discover-links > a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  div.discover div.discover-links > a:hover {
+    color: #ffc851;
+  }
+  div.discover div.discover-links > a.active {
+    color: #ffc851;
+  }
+  div.discover div.discover-menu, div.discover div.discover-burger, div.discover div.discover-dessert, div.discover div.discover-drink, div.discover div.discover-pasta, div.discover div.discover-salad {
+    overflow: hidden;
+    width: 100%;
+  }
+  div.discover div.discover-menu div.discover-card, div.discover div.discover-burger div.discover-card, div.discover div.discover-dessert div.discover-card, div.discover div.discover-drink div.discover-card, div.discover div.discover-pasta div.discover-card, div.discover div.discover-salad div.discover-card {
+    width: 25%;
+    padding: 20px;
+    color: white;
+    transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  div.discover div.discover-menu div.discover-card div.img, div.discover div.discover-burger div.discover-card div.img, div.discover div.discover-dessert div.discover-card div.img, div.discover div.discover-drink div.discover-card div.img, div.discover div.discover-pasta div.discover-card div.img, div.discover div.discover-salad div.discover-card div.img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+  }
+  div.discover div.discover-menu div.discover-card div.img img.img-pizza, div.discover div.discover-burger div.discover-card div.img img.img-pizza, div.discover div.discover-dessert div.discover-card div.img img.img-pizza, div.discover div.discover-drink div.discover-card div.img img.img-pizza, div.discover div.discover-pasta div.discover-card div.img img.img-pizza, div.discover div.discover-salad div.discover-card div.img img.img-pizza {
+    width: 100%;
+  }
+  div.discover div.discover-menu div.discover-card div.img div.img-shop, div.discover div.discover-burger div.discover-card div.img div.img-shop, div.discover div.discover-dessert div.discover-card div.img div.img-shop, div.discover div.discover-drink div.discover-card div.img div.img-shop, div.discover div.discover-pasta div.discover-card div.img div.img-shop, div.discover div.discover-salad div.discover-card div.img div.img-shop {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    border-radius: 50%;
+    background-color: rgba(255, 200, 81, 0.5);
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  div.discover div.discover-menu div.discover-card div.img div.img-shop a, div.discover div.discover-burger div.discover-card div.img div.img-shop a, div.discover div.discover-dessert div.discover-card div.img div.img-shop a, div.discover div.discover-drink div.discover-card div.img div.img-shop a, div.discover div.discover-pasta div.discover-card div.img div.img-shop a, div.discover div.discover-salad div.discover-card div.img div.img-shop a {
+    text-decoration: none;
+    width: 100%;
+  }
+  div.discover div.discover-menu div.discover-card div.img div.img-shop a img, div.discover div.discover-burger div.discover-card div.img div.img-shop a img, div.discover div.discover-dessert div.discover-card div.img div.img-shop a img, div.discover div.discover-drink div.discover-card div.img div.img-shop a img, div.discover div.discover-pasta div.discover-card div.img div.img-shop a img, div.discover div.discover-salad div.discover-card div.img div.img-shop a img {
+    width: 25%;
+    opacity: 100%;
+  }
+  div.discover div.discover-menu div.discover-card h3, div.discover div.discover-burger div.discover-card h3, div.discover div.discover-dessert div.discover-card h3, div.discover div.discover-drink div.discover-card h3, div.discover div.discover-pasta div.discover-card h3, div.discover div.discover-salad div.discover-card h3 {
+    padding: 20px 15px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 10px;
+  }
+  div.discover div.discover-menu div.discover-card p, div.discover div.discover-burger div.discover-card p, div.discover div.discover-dessert div.discover-card p, div.discover div.discover-drink div.discover-card p, div.discover div.discover-pasta div.discover-card p, div.discover div.discover-salad div.discover-card p {
+    padding: 15px;
+    font-size: 16px;
+  }
+  div.discover div.discover-menu div.discover-card span, div.discover div.discover-burger div.discover-card span, div.discover div.discover-dessert div.discover-card span, div.discover div.discover-drink div.discover-card span, div.discover div.discover-pasta div.discover-card span, div.discover div.discover-salad div.discover-card span {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "lato";
+    letter-spacing: 3px;
+  }
+  div.discover div.discover-menu div.discover-card:hover div.img div.img-shop, div.discover div.discover-burger div.discover-card:hover div.img div.img-shop, div.discover div.discover-dessert div.discover-card:hover div.img div.img-shop, div.discover div.discover-drink div.discover-card:hover div.img div.img-shop, div.discover div.discover-pasta div.discover-card:hover div.img div.img-shop, div.discover div.discover-salad div.discover-card:hover div.img div.img-shop {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  div.discover div.discover-menu div.discover-card:hover, div.discover div.discover-burger div.discover-card:hover, div.discover div.discover-dessert div.discover-card:hover, div.discover div.discover-drink div.discover-card:hover, div.discover div.discover-pasta div.discover-card:hover, div.discover div.discover-salad div.discover-card:hover {
+    transform: scale(1.1);
+  }
+  div.discover div.discover-menu div.no-1, div.discover div.discover-menu div.no-2, div.discover div.discover-menu div.no-5, div.discover div.discover-menu div.no-6, div.discover div.discover-burger div.no-1, div.discover div.discover-burger div.no-2, div.discover div.discover-burger div.no-5, div.discover div.discover-burger div.no-6, div.discover div.discover-dessert div.no-1, div.discover div.discover-dessert div.no-2, div.discover div.discover-dessert div.no-5, div.discover div.discover-dessert div.no-6, div.discover div.discover-drink div.no-1, div.discover div.discover-drink div.no-2, div.discover div.discover-drink div.no-5, div.discover div.discover-drink div.no-6, div.discover div.discover-pasta div.no-1, div.discover div.discover-pasta div.no-2, div.discover div.discover-pasta div.no-5, div.discover div.discover-pasta div.no-6, div.discover div.discover-salad div.no-1, div.discover div.discover-salad div.no-2, div.discover div.discover-salad div.no-5, div.discover div.discover-salad div.no-6 {
+    position: relative;
+    left: -150%;
+  }
+  div.discover div.discover-menu div.no-3, div.discover div.discover-menu div.no-4, div.discover div.discover-menu div.no-7, div.discover div.discover-menu div.no-8, div.discover div.discover-burger div.no-3, div.discover div.discover-burger div.no-4, div.discover div.discover-burger div.no-7, div.discover div.discover-burger div.no-8, div.discover div.discover-dessert div.no-3, div.discover div.discover-dessert div.no-4, div.discover div.discover-dessert div.no-7, div.discover div.discover-dessert div.no-8, div.discover div.discover-drink div.no-3, div.discover div.discover-drink div.no-4, div.discover div.discover-drink div.no-7, div.discover div.discover-drink div.no-8, div.discover div.discover-pasta div.no-3, div.discover div.discover-pasta div.no-4, div.discover div.discover-pasta div.no-7, div.discover div.discover-pasta div.no-8, div.discover div.discover-salad div.no-3, div.discover div.discover-salad div.no-4, div.discover div.discover-salad div.no-7, div.discover div.discover-salad div.no-8 {
+    position: relative;
+    right: -150%;
+  }
+  div.discover div.discover-anime div.no-1 {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: discover-1;
+            animation-name: discover-1;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes discover-1 {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes discover-1 {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.discover div.discover-anime div.no-2 {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: discover-2;
+            animation-name: discover-2;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes discover-2 {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes discover-2 {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.discover div.discover-anime div.no-3 {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: discover-3;
+            animation-name: discover-3;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1s;
+            animation-iteration-count: 1s;
+  }
+  @-webkit-keyframes discover-3 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes discover-3 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.discover div.discover-anime div.no-4 {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: discover-4;
+            animation-name: discover-4;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes discover-4 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes discover-4 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.discover div.discover-anime-2 div.no-5 {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: discover-5;
+            animation-name: discover-5;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes discover-5 {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes discover-5 {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.discover div.discover-anime-2 div.no-6 {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: discover-6;
+            animation-name: discover-6;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes discover-6 {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes discover-6 {
+    from {
+      position: relative;
+      left: -100%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.discover div.discover-anime-2 div.no-7 {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: discover-7;
+            animation-name: discover-7;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes discover-7 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes discover-7 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.discover div.discover-anime-2 div.no-8 {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: discover-8;
+            animation-name: discover-8;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes discover-8 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes discover-8 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+}
+@media screen and (min-width: 300px) {
+  div.blog {
+    background-image: url(img/back_3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 40px;
+    overflow: hidden;
+  }
+  div.blog p.titr {
+    letter-spacing: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 10px;
+    font-family: "PT Sans Narrow";
+    position: relative;
+    right: 0;
+    margin-bottom: 0;
+  }
+  div.blog h2 {
+    letter-spacing: 7px;
+    font-size: 28px;
+    padding: 10px 10px;
+    font-weight: 600;
+    font-family: "PT Sans Narrow";
+    position: relative;
+    right: 0;
+  }
+  div.blog p.desc {
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 20px 10px;
+    width: 100%;
+    position: relative;
+    right: 0;
+  }
+  div.blog div.blog-cards div.card-1, div.blog div.blog-cards div.card-2 {
+    position: relative;
+    left: 0;
+  }
+  div.blog div.blog-cards div.card-3, div.blog div.blog-cards div.card-4 {
+    position: relative;
+    right: 0;
+  }
+  div.blog div.blog-cards div.b-card {
+    padding: 10px;
+    text-align: center;
+    background-color: #121618;
+    border: 2px solid #ffc851;
+    padding: 30px 10px;
+    margin-top: 20px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 300px) and (min-width: 300px) {
+  div.blog div.blog-cards div.b-card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 300px) and (min-width: 567px) {
+  div.blog div.blog-cards div.b-card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 300px) and (min-width: 768px) {
+  div.blog div.blog-cards div.b-card {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 300px) and (min-width: 999px) {
+  div.blog div.blog-cards div.b-card {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 300px) and (min-width: 1200px) {
+  div.blog div.blog-cards div.b-card {
+    width: 22%;
+  }
+}
+@media screen and (min-width: 300px) {
+  div.blog div.blog-cards div.b-card p {
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: white;
+  }
+}
+@media screen and (min-width: 300px) {
+  div.blog div.blog-cards div.b-card h3 {
+    font-size: 20px;
+    margin: 30px 0 !important;
+    font-weight: 500;
+    letter-spacing: 4px;
+    width: 100%;
+    color: white;
+    font-family: "PT Sans Narrow";
+  }
+}
+@media screen and (min-width: 300px) {
+  div.blog div.blog-cards div.b-card a {
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-size: 12px;
+    border: 2px solid #ffc851;
+    text-decoration: none;
+    color: #ffc851;
+    transition: 250ms ease;
+  }
+}
+@media screen and (min-width: 300px) {
+  div.blog div.blog-cards div.b-card a:hover {
+    background-color: #ffc851;
+    color: black;
+  }
+}
+@media screen and (min-width: 999px) {
+  div.blog {
+    background-image: url(img/back_3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 40px;
+    overflow: hidden;
+  }
+  div.blog p.titr {
+    letter-spacing: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 10px;
+    font-family: "PT Sans Narrow";
+    position: relative;
+    right: -150%;
+    margin-bottom: 0;
+  }
+  div.blog h2 {
+    letter-spacing: 7px;
+    font-size: 28px;
+    padding: 10px 10px;
+    font-weight: 600;
+    font-family: "PT Sans Narrow";
+    position: relative;
+    right: -150%;
+  }
+  div.blog p.desc {
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 20px 10px;
+    width: 100%;
+    position: relative;
+    right: -150%;
+  }
+  div.blog div.blog-cards div.card-1, div.blog div.blog-cards div.card-2 {
+    position: relative;
+    left: -150%;
+  }
+  div.blog div.blog-cards div.card-3, div.blog div.blog-cards div.card-4 {
+    position: relative;
+    right: -150%;
+  }
+  div.blog div.blog-cards div.b-card {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 30px 10px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 999px) and (min-width: 300px) {
+  div.blog div.blog-cards div.b-card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 999px) and (min-width: 567px) {
+  div.blog div.blog-cards div.b-card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 999px) and (min-width: 768px) {
+  div.blog div.blog-cards div.b-card {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 999px) and (min-width: 999px) {
+  div.blog div.blog-cards div.b-card {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 999px) and (min-width: 1200px) {
+  div.blog div.blog-cards div.b-card {
+    width: 22%;
+  }
+}
+@media screen and (min-width: 999px) {
+  div.blog div.blog-cards div.b-card p {
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: white;
+  }
+}
+@media screen and (min-width: 999px) {
+  div.blog div.blog-cards div.b-card h3 {
+    font-size: 20px;
+    margin: 30px 0 !important;
+    font-weight: 500;
+    letter-spacing: 4px;
+    width: 100%;
+    color: white;
+    font-family: "PT Sans Narrow";
+  }
+}
+@media screen and (min-width: 999px) {
+  div.blog div.blog-cards div.b-card a {
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-size: 12px;
+    border: 2px solid #ffc851;
+    text-decoration: none;
+    color: #ffc851;
+    transition: 250ms ease;
+  }
+}
+@media screen and (min-width: 999px) {
+  div.blog div.blog-cards div.b-card a:hover {
+    background-color: #ffc851;
+    color: black;
+  }
+}
+@media screen and (min-width: 999px) {
+  div.blog-animation p.titr {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: titr-1;
+            animation-name: titr-1;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes titr-1 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes titr-1 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.blog-animation h2 {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: titr-2;
+            animation-name: titr-2;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes titr-2 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes titr-2 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.blog-animation p.desc {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: titr-3;
+            animation-name: titr-3;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes titr-3 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes titr-3 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.blog-animation div.blog-cards div.card-1 {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: b-card-1;
+            animation-name: b-card-1;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes b-card-1 {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes b-card-1 {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.blog-animation div.blog-cards div.card-2 {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: b-card-2;
+            animation-name: b-card-2;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes b-card-2 {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes b-card-2 {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.blog-animation div.blog-cards div.card-3 {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: b-card-3;
+            animation-name: b-card-3;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes b-card-3 {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes b-card-3 {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.blog-animation div.blog-cards div.card-4 {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: b-card-4;
+            animation-name: b-card-4;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes b-card-4 {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes b-card-4 {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.blog {
+    background-image: url(img/back_3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 40px;
+    overflow: hidden;
+  }
+  div.blog p.titr {
+    letter-spacing: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 10px;
+    font-family: "PT Sans Narrow";
+    position: relative;
+    right: -150%;
+    margin-bottom: 0;
+  }
+  div.blog h2 {
+    letter-spacing: 7px;
+    font-size: 28px;
+    padding: 10px 10px;
+    font-weight: 600;
+    font-family: "PT Sans Narrow";
+    position: relative;
+    right: -150%;
+  }
+  div.blog p.desc {
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 20px 10px;
+    width: 100%;
+    position: relative;
+    right: -150%;
+  }
+  div.blog div.blog-cards div.card-1, div.blog div.blog-cards div.card-2 {
+    position: relative;
+    left: -150%;
+  }
+  div.blog div.blog-cards div.card-3, div.blog div.blog-cards div.card-4 {
+    position: relative;
+    right: -150%;
+  }
+  div.blog div.blog-cards div.b-card {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 40px 20px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 300px) {
+  div.blog div.blog-cards div.b-card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 567px) {
+  div.blog div.blog-cards div.b-card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 768px) {
+  div.blog div.blog-cards div.b-card {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 999px) {
+  div.blog div.blog-cards div.b-card {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  div.blog div.blog-cards div.b-card {
+    width: 22%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.blog div.blog-cards div.b-card p {
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.blog div.blog-cards div.b-card h3 {
+    font-size: 20px;
+    margin: 30px 0 !important;
+    font-weight: 500;
+    letter-spacing: 4px;
+    width: 100%;
+    color: white;
+    font-family: "PT Sans Narrow";
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.blog div.blog-cards div.b-card a {
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-size: 12px;
+    border: 2px solid #ffc851;
+    text-decoration: none;
+    color: #ffc851;
+    transition: 250ms ease;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.blog div.blog-cards div.b-card a:hover {
+    background-color: #ffc851;
+    color: black;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.blog-animation p.titr {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: titr-1;
+            animation-name: titr-1;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes titr-1 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes titr-1 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.blog-animation h2 {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: titr-2;
+            animation-name: titr-2;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes titr-2 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes titr-2 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.blog-animation p.desc {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: titr-3;
+            animation-name: titr-3;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes titr-3 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes titr-3 {
+    from {
+      position: relative;
+      right: -100%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.blog-animation div.blog-cards div.card-1 {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: b-card-1;
+            animation-name: b-card-1;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes b-card-1 {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes b-card-1 {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.blog-animation div.blog-cards div.card-2 {
+    position: relative;
+    left: 0;
+    -webkit-animation-name: b-card-2;
+            animation-name: b-card-2;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes b-card-2 {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  @keyframes b-card-2 {
+    from {
+      position: relative;
+      left: -150%;
+    }
+    to {
+      position: relative;
+      left: 0;
+    }
+  }
+  div.blog-animation div.blog-cards div.card-3 {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: b-card-3;
+            animation-name: b-card-3;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes b-card-3 {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes b-card-3 {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  div.blog-animation div.blog-cards div.card-4 {
+    position: relative;
+    right: 0;
+    -webkit-animation-name: b-card-4;
+            animation-name: b-card-4;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes b-card-4 {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+  @keyframes b-card-4 {
+    from {
+      position: relative;
+      right: -150%;
+    }
+    to {
+      position: relative;
+      right: 0;
+    }
+  }
+}
+footer {
+  background-color: #121618;
+  background-size: cover;
+  padding: 50px 0;
+  overflow: hidden;
+}
+footer div.email {
+  padding: 20px;
+}
+footer div.email h2 {
+  color: white;
+  letter-spacing: 8px;
+  font-size: 28px;
+  margin-bottom: 50px;
+  font-family: "PT Sans Narrow";
+}
+footer div.email div.input-group input {
+  background-color: #121618;
+  border: 1px solid #1d2326;
+  color: #1d2326;
+  border-radius: 0 !important;
+  padding: 15px 15px;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+footer div.email div.input-group span {
+  background-color: #1d2326;
+  border: 1px solid #1d2326;
+  color: white;
+  border-radius: 0 !important;
+  font-size: 14px;
+  padding: 15px 25px;
+  transition: 250ms ease;
+  cursor: pointer;
+  margin-bottom: 50px;
+  font-family: "PT Sans Narrow";
+  letter-spacing: 3px;
+}
+footer div.email div.input-group span:hover {
+  background-color: #ffc851;
+  border: 1px solid #ffc851;
+  color: black;
+}
+footer div.hr {
+  height: 2px;
+  width: 100%;
+  background-color: #1d2326;
+  padding: 0;
+  margin: 0;
+}
+footer div.footer-bottom {
+  padding: 50px 0;
+}
+footer div.footer-bottom img {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+footer div.footer-bottom div.work-time p {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin: 20px 20px;
+}
+footer div.footer-bottom div.footer-menu a {
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  padding: 10px 15px;
+  margin: 20px 0;
+  transition: 250ms ease;
+}
+footer div.footer-bottom div.footer-menu a:hover {
+  color: #ffc851;
+}
+footer div.footer-bottom p.copy-right {
+  color: #525a5e;
+  font-size: 18px;
+}/*# sourceMappingURL=main.css.map */

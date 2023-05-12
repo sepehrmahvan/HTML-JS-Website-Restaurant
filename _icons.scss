@@ -1,0 +1,26 @@
+div.icons{
+    background-image: url(img/back_2.webp);
+    background-attachment: fixed;
+    width: 100%;
+    padding: 10px;
+    div.card-icons{
+        height: 400px !important;
+        width: 29%;
+        @media screen and (min-width:300px) {
+            width: 90%;
+        }
+        @media screen and (min-width:768px) {
+            width: 29%;
+        }
+        img{
+            width: 120px;
+            height: 120px;
+        }
+        h3{
+            letter-spacing: 3px;
+        }
+        p{
+            color: rgba($color: $color-secondary, $alpha: 40%);
+        }
+    }
+}
